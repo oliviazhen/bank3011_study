@@ -1,0 +1,16 @@
+[theme]
+# Larger base text everywhere (Streamlit's default is 16)
+baseFontSize = 18
+primaryColor = "#2563eb"
+font = "sans serif"
+textColor = "#18181b"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f4f5"
+
+[client]
+# Hide the Deploy button and developer menu clutter
+toolbarMode = "minimal"
+
+[runner]
+# Never auto-display bare expressions (prevents stray object dumps on the page)
+magicEnabled = false

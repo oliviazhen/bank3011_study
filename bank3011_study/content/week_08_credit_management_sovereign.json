@@ -1,0 +1,2019 @@
+{
+  "unit": "BANK3011",
+  "week": 8,
+  "title": "Credit Risk: Part III & Sovereign Risk",
+  "source": "Lecture 7 · Credit Risk: Part III & Sovereign Risk",
+  "concepts": [
+    {
+      "id": "loan_sales",
+      "name": "Loan sales: participations and assignments",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "The traditional way to transfer credit risk. Participations give the buyer a share with limited contractual control; assignments (90%+ of the US market) transfer all rights. Loans remain hard to sell because each assignment is a bespoke contract.",
+      "misconceptions": [
+        "Thinking a participation transfers full rights"
+      ],
+      "questions": [
+        {
+          "id": "loan_sales_1",
+          "difficulty": 1,
+          "prompt": "What's the key difference between a participation and an assignment?",
+          "options": [
+            "An assignment transfers all rights (the buyer becomes the lender); a participation gives the buyer a share with limited contractual control",
+            "A participation transfers all rights; an assignment doesn't",
+            "Only assignments involve syndicated loans",
+            "There's no difference"
+          ],
+          "answer": 0,
+          "explanation": "Assignments are the main US contract; participations are common in syndicated loans.",
+          "feedback": [
+            null,
+            "That's the wrong way round.",
+            "Participations in syndicated loans are often transferable.",
+            "Rights and control differ."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 6
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_2",
+          "difficulty": 1,
+          "prompt": "Which contract type makes up the bulk (90%+) of the US loan sales market?",
+          "options": [
+            "Assignments",
+            "Participations",
+            "Credit default swaps",
+            "Securitisations"
+          ],
+          "answer": 0,
+          "explanation": "In an assignment all rights pass to the buyer.",
+          "feedback": [
+            null,
+            "Participations are a minor share.",
+            "CDS are derivatives, not loan sales.",
+            "Securitisation is a separate technique."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_3",
+          "difficulty": 1,
+          "prompt": "Who typically buys distressed loans?",
+          "options": [
+            "Investment banks, hedge funds and vulture funds",
+            "Central banks",
+            "Retail depositors",
+            "Credit rating agencies"
+          ],
+          "answer": 0,
+          "explanation": "They buy cheaply, betting recoveries will be worth more than they paid.",
+          "feedback": [
+            null,
+            "Not loan sale buyers in the lecture.",
+            "Not buyers of loans.",
+            "They rate, they don't buy."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 8
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_4",
+          "difficulty": 1,
+          "prompt": "What is a 'good bank–bad bank' model?",
+          "options": [
+            "A troubled bank moves its bad loans into a separate entity, which then sells them off",
+            "A bank that lends only to good borrowers",
+            "A merger of a healthy bank and a failed one",
+            "A deposit insurance scheme"
+          ],
+          "answer": 0,
+          "explanation": "It's a major source of distressed loans for sale.",
+          "feedback": [
+            null,
+            "Not the meaning.",
+            "Not the meaning.",
+            "Not related."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_5",
+          "difficulty": 2,
+          "prompt": "Why does a buyer of a loan participation effectively face 'double' risk?",
+          "options": [
+            "It's exposed both to the borrower defaulting and to the selling bank failing, because it has limited contractual control",
+            "It must pay double the loan amount",
+            "It bears interest rate and FX risk on every loan",
+            "Participations always have two borrowers"
+          ],
+          "answer": 0,
+          "explanation": "In a participation the original bank stays the lender of record, so the buyer depends on it too.",
+          "feedback": [
+            null,
+            "Not about price.",
+            "Not the point here.",
+            "There's still one borrower."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_6",
+          "difficulty": 2,
+          "prompt": "Why are loans 'essentially not readily marketable', even in the assignment market?",
+          "options": [
+            "Each assignment is a bespoke private contract, with details such as accrued interest settled deal by deal",
+            "Loans can't legally be sold",
+            "Assignments only transfer part of the rights",
+            "Buyers can't hold loans"
+          ],
+          "answer": 0,
+          "explanation": "That complexity is why securitisation and credit derivatives, which create marketable instruments, are seen as advances.",
+          "feedback": [
+            null,
+            "They can be sold; it's just slow and bespoke.",
+            "Assignments transfer all rights.",
+            "Many types of buyer hold loans."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 7
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_7",
+          "difficulty": 2,
+          "prompt": "Why have foreign banks been dominant buyers of US-dollar loans?",
+          "options": [
+            "To gain exposure to US borrowers without building a US lending network",
+            "Because US law requires it",
+            "Because US loans have no credit risk",
+            "To avoid holding US dollars"
+          ],
+          "answer": 0,
+          "explanation": "Buying loans gives them the exposure directly.",
+          "feedback": [
+            null,
+            "No such requirement.",
+            "They carry credit risk.",
+            "They're buying USD loans."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 8
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sales_8",
+          "difficulty": 3,
+          "prompt": "A buyer wants full legal rights over a loan and no exposure if the selling bank later fails. Which structure should it use?",
+          "options": [
+            "An assignment: all rights pass to the buyer, which becomes the lender",
+            "A participation, because it's cheaper",
+            "A participation, because the seller stays the lender of record",
+            "A CDS on the borrower"
+          ],
+          "answer": 0,
+          "explanation": "In a participation the buyer has limited control and depends on the seller; an assignment removes that link.",
+          "feedback": [
+            null,
+            "The issue is rights, not price.",
+            "That's exactly the exposure the buyer wants to avoid.",
+            "A CDS transfers risk but gives no rights over the loan."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 6
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "loan_sale_motives",
+      "name": "Why banks sell loans, and what holds sales back",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "Motives: reduce reserve requirement costs, boost reported (fee) income, meet capital requirements, manage liquidity. Deterrents: borrowers' access to commercial paper, customer relationship effects, informational (lemons) concerns, legal concerns.",
+      "misconceptions": [
+        "Forgetting that selling below book value reduces equity, offsetting the capital benefit"
+      ],
+      "questions": [
+        {
+          "id": "loan_sale_motives_1",
+          "difficulty": 1,
+          "prompt": "Which is NOT a motivation for loan sales listed in the lecture?",
+          "options": [
+            "Increasing concentration in one borrower",
+            "Meeting the reserve requirement",
+            "Boosting reported income",
+            "Meeting the capital requirement"
+          ],
+          "answer": 0,
+          "explanation": "The four motives: reserve requirement, reported income, capital requirement and liquidity risk.",
+          "feedback": [
+            null,
+            "Listed.",
+            "Listed.",
+            "Listed."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 10
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_2",
+          "difficulty": 1,
+          "prompt": "A bank sells a loan that was funded by deposits. What happens to the cost of its reserve requirement (the 'reserve tax')?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Without the loan, the bank no longer needs those deposits, so it doesn't hold idle reserves against them.",
+          "feedback": [
+            "Selling the loan reduces the deposits it needs.",
+            null,
+            "Reserves are held against deposits."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 10
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Loan sold",
+            "to": "Reserve tax ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "loan_sale_motives",
+            "loan_sales"
+          ]
+        },
+        {
+          "id": "loan_sale_motives_3",
+          "difficulty": 1,
+          "prompt": "How does access to the commercial paper market deter loan sales?",
+          "options": [
+            "Large, creditworthy firms borrow directly from investors, so banks originate fewer high-quality loans to sell",
+            "It makes loans illegal to sell",
+            "It raises reserve requirements",
+            "It increases demand for bank loans"
+          ],
+          "answer": 0,
+          "explanation": "Fewer good loans to sell means less fee income and less to sell for capital, reserve or liquidity reasons.",
+          "feedback": [
+            null,
+            "Not the effect.",
+            "Not the effect.",
+            "It reduces demand for bank loans."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_4",
+          "difficulty": 2,
+          "prompt": "A bank funds an $80m loan entirely with deposits; the reserve requirement is 8% and the bank could earn 4% on idle funds. How much does selling the loan save each year?",
+          "options": [
+            "$256,000",
+            "$6.4 million",
+            "$3.2 million",
+            "$2.56 million"
+          ],
+          "answer": 0,
+          "explanation": "Reserves = 8% × $80m = $6.4m; forgone return = 4% × $6.4m = $256,000.",
+          "feedback": [
+            null,
+            "That's the reserves themselves, not their annual cost.",
+            "That's 4% of the whole loan; only the reserves sit idle.",
+            "That's off by a factor of ten."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 10
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_5",
+          "difficulty": 2,
+          "prompt": "A bank has $8m of capital and $100m of risk-weighted assets. It sells loans with $20m of risk-weighted assets at book value. What is its new capital ratio?",
+          "options": [
+            "10%",
+            "8%",
+            "6.4%",
+            "9.6%"
+          ],
+          "answer": 0,
+          "explanation": "Capital ÷ RWA = 8 ÷ (100 − 20) = 10%.",
+          "feedback": [
+            null,
+            "That ignores the fall in RWA.",
+            "That cuts capital instead of RWA.",
+            "That's 8% × 1.2."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 10
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_6",
+          "difficulty": 2,
+          "prompt": "How do credit ratings on loans offered for sale help loan sales?",
+          "options": [
+            "They reduce informational concerns (buyers fearing 'lemons'), shrinking the discount buyers demand",
+            "They raise the reserve requirement",
+            "They transfer legal risk to the agency",
+            "They guarantee repayment"
+          ],
+          "answer": 0,
+          "explanation": "Independent assessment reassures buyers they aren't being sold the worst loans.",
+          "feedback": [
+            null,
+            "Not related.",
+            "Agencies don't take on legal risk.",
+            "Ratings assess, they don't guarantee."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_7",
+          "difficulty": 2,
+          "prompt": "A borrower discovers its loan has been sold to another party. What risk does the selling bank face?",
+          "options": [
+            "The borrower may take future business elsewhere, so the bank gains fees now but loses income later",
+            "The loan returns automatically to the bank",
+            "The bank's reserve requirement rises",
+            "None: the sale removes all links"
+          ],
+          "answer": 0,
+          "explanation": "Customer relationship effects: sale → upset borrower → lost future business. That's why banks often keep servicing the loan.",
+          "feedback": [
+            null,
+            "That's the legal-concern scenario.",
+            "Not affected by the customer's view.",
+            "The relationship is the link."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 11
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Loan sold",
+            "to": "Relationship ↓ → future income ↓",
+            "steps": 2
+          },
+          "concepts": [
+            "loan_sale_motives",
+            "loan_sales"
+          ]
+        },
+        {
+          "id": "loan_sale_motives_8",
+          "difficulty": 3,
+          "prompt": "A bank with $8m capital and $100m RWA sells loans with $20m RWA, but at a $1m loss because buyers fear 'lemons'. What is its new capital ratio?",
+          "options": [
+            "8.75%",
+            "10%",
+            "7%",
+            "8%"
+          ],
+          "answer": 0,
+          "explanation": "Capital falls to $7m and RWA to $80m: 7 ÷ 80 = 8.75%. The loss partly undoes the capital relief.",
+          "feedback": [
+            null,
+            "That ignores the loss on sale.",
+            "That divides by the old RWA (7 ÷ 100).",
+            "That's the original ratio."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 10
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_sale_motives_9",
+          "difficulty": 3,
+          "prompt": "A buyer later claims misrepresentation and forces the seller to take the loan back. Which benefits of the sale are lost?",
+          "options": [
+            "The capital and reserve benefits, because the loan and its risk return to the bank, and legal costs eat into fee income",
+            "Only the origination fee",
+            "None, because the sale already happened",
+            "Only the liquidity benefit"
+          ],
+          "answer": 0,
+          "explanation": "Legal concerns: the benefits only hold if the loan is truly gone.",
+          "feedback": [
+            null,
+            "More than the fee is affected.",
+            "Putting the loan back reverses the benefits.",
+            "Capital and reserve relief go too."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "asset_securitisation",
+      "name": "Asset securitisation",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "Loans are pooled and transferred to a separate SPV, which issues securities (pass-throughs, asset-backed bonds, CMOs/CDOs in tranches). Both the loans and the risk leave the bank. Motives: duration, liquidity, capital, funding and fee income. Credit enhancement: LMI (LVR > 80%), guarantees, credit derivatives.",
+      "misconceptions": [
+        "Thinking losses hit Class A first",
+        "Thinking the bank can own or control the SPV"
+      ],
+      "questions": [
+        {
+          "id": "asset_securitisation_1",
+          "difficulty": 1,
+          "prompt": "How do securitisation and credit derivatives differ in what leaves the bank?",
+          "options": [
+            "Securitisation removes both the loans and the risk; credit derivatives remove only the risk, and the loan stays on the books",
+            "Both remove the loans and the risk",
+            "Credit derivatives remove the loans; securitisation only the risk",
+            "Neither removes risk"
+          ],
+          "answer": 0,
+          "explanation": "Securitisation is a cash instrument; credit derivatives are derivative instruments.",
+          "feedback": [
+            null,
+            "With a credit derivative the loan stays.",
+            "That's the wrong way round.",
+            "Both transfer credit risk."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_2",
+          "difficulty": 1,
+          "prompt": "Why must the SPV be separate from the bank?",
+          "options": [
+            "So the assets have genuinely been sold: the bank may manage it for a fee but can't own or control it, and doesn't consolidate it",
+            "Because SPVs pay lower tax",
+            "So the bank can keep the loans' income",
+            "Because only SPVs can issue loans"
+          ],
+          "answer": 0,
+          "explanation": "The SPV is usually a trust holding the assets for investors, the beneficial owners.",
+          "feedback": [
+            null,
+            "Not the reason given.",
+            "The income goes to investors.",
+            "SPVs issue securities, not loans."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 18
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 19
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_3",
+          "difficulty": 1,
+          "prompt": "A bank securitises a pool of loans. What happens to its risk-weighted assets and capital requirement?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "The loans leave the balance sheet, so risk-weighted assets and the capital requirement fall.",
+          "feedback": [
+            "Assets leave, they don't grow.",
+            null,
+            "The loans no longer count towards RWA."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 13
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Loans securitised",
+            "to": "RWA ↓ → capital requirement ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "asset_securitisation",
+            "loan_sale_motives"
+          ]
+        },
+        {
+          "id": "asset_securitisation_4",
+          "difficulty": 1,
+          "prompt": "In a CDO structured by default risk, which class absorbs credit losses first?",
+          "options": [
+            "The subordinated class (e.g. Class C), which is in effect quasi-equity",
+            "Class A",
+            "All classes equally",
+            "The originating bank"
+          ],
+          "answer": 0,
+          "explanation": "Payments go A → B → C; losses hit C → B → A.",
+          "feedback": [
+            null,
+            "Class A is the most senior.",
+            "Losses are allocated by seniority.",
+            "The loans have been sold."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_5",
+          "difficulty": 1,
+          "prompt": "How is any profit on the sale of loans into a securitisation recorded?",
+          "options": [
+            "As trading income",
+            "As interest income",
+            "As a deposit",
+            "As equity raised"
+          ],
+          "answer": 0,
+          "explanation": "Ongoing management fees are fee income; profit on the sale is trading income.",
+          "feedback": [
+            null,
+            "The bank no longer earns the loans' interest.",
+            "Not a liability.",
+            "No shares are issued."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_6",
+          "difficulty": 1,
+          "prompt": "When does lenders mortgage insurance (LMI) generally apply as credit enhancement?",
+          "options": [
+            "When the loan-to-value ratio exceeds 80%",
+            "When the borrower is a company",
+            "On every securitised loan",
+            "When rates rise"
+          ],
+          "answer": 0,
+          "explanation": "The two main Australian providers were Genworth and QBE.",
+          "feedback": [
+            null,
+            "LMI is for mortgages.",
+            "Only high-LVR loans.",
+            "Not rate-dependent."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 21
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_7",
+          "difficulty": 2,
+          "prompt": "A CMO is structured by repayment risk. When underlying mortgages are repaid early, who is repaid first?",
+          "options": [
+            "Class A",
+            "Class C",
+            "All classes in proportion",
+            "The originating bank"
+          ],
+          "answer": 0,
+          "explanation": "Class B isn't repaid until all of Class A is, and so on. CMOs reallocate prepayment risk; CDOs reallocate default risk.",
+          "feedback": [
+            null,
+            "Class C is repaid last.",
+            "Repayment is sequential.",
+            "The bank sold the loans."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_8",
+          "difficulty": 2,
+          "prompt": "Class C makes up 5% of a CDO pool and 3% of the pool defaults. Which classes lose money?",
+          "options": [
+            "Only Class C",
+            "Classes A, B and C equally",
+            "Class A",
+            "Classes B and C"
+          ],
+          "answer": 0,
+          "explanation": "Class C absorbs losses first; a 3% loss fits inside its 5% layer.",
+          "feedback": [
+            null,
+            "Losses follow seniority.",
+            "Class A is protected by the classes below it.",
+            "Class B is only hit once Class C is exhausted."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_9",
+          "difficulty": 2,
+          "prompt": "Which is NOT a motive for securitisation listed in the lecture?",
+          "options": [
+            "Increasing the bank's risk-weighted assets",
+            "Duration management",
+            "Liquidity management",
+            "Fee income"
+          ],
+          "answer": 0,
+          "explanation": "Securitisation reduces risk-weighted assets.",
+          "feedback": [
+            null,
+            "Listed.",
+            "Listed.",
+            "Listed."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 13
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_10",
+          "difficulty": 3,
+          "prompt": "Class C is 5% of a CDO pool and Class B is the next 15%; the rest is Class A. If 8% of the pool defaults, what share of Class B's value is lost?",
+          "options": [
+            "20%",
+            "0%",
+            "53%",
+            "8%"
+          ],
+          "answer": 0,
+          "explanation": "Class C absorbs the first 5%; the remaining 3% hits Class B: 3 ÷ 15 = 20%. Class A is untouched.",
+          "feedback": [
+            null,
+            "Class C is only 5%, so B takes the rest.",
+            "That's 8 ÷ 15: Class C absorbs the first 5%.",
+            "That's the pool loss, not B's share."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "asset_securitisation_11",
+          "difficulty": 3,
+          "prompt": "A bank with a positive duration gap securitises its longest-duration mortgages and holds the cash. What happens to its duration gap?",
+          "options": [
+            "It narrows: the long-duration assets leave and cash has near-zero duration, so asset duration falls",
+            "It widens, because cash has a long duration",
+            "No change: securitisation doesn't affect duration",
+            "It narrows, because liabilities get longer"
+          ],
+          "answer": 0,
+          "explanation": "Securitisation → long-duration assets out, cash in → D_A ↓ → duration gap narrows.",
+          "feedback": [
+            null,
+            "Cash has (close to) zero duration.",
+            "The lecture lists duration management as a motive.",
+            "The liabilities aren't changed here."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 13
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Long-duration loans securitised",
+            "to": "D_A ↓ → duration gap ↓",
+            "steps": 2
+          },
+          "concepts": [
+            "asset_securitisation",
+            "loan_sale_motives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credit_derivatives",
+      "name": "Credit derivatives: TROR swaps and CDS",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "No principal is exchanged and ownership doesn't change. TROR swap: the protection buyer pays the total return on a risky asset and receives LIBOR + spread plus compensation for losses. CDS: the buyer pays a premium and is paid only if a credit event occurs. Buying protection removes credit risk; selling adds it. Both create counterparty risk.",
+      "misconceptions": [
+        "Thinking a CDS pays out every period",
+        "Forgetting counterparty risk"
+      ],
+      "questions": [
+        {
+          "id": "credit_derivatives_1",
+          "difficulty": 1,
+          "prompt": "In a TROR swap or a CDS, what changes hands at the start?",
+          "options": [
+            "No principal and no ownership: the contract only sets a notional amount",
+            "The loan itself",
+            "The full principal of the loan",
+            "The borrower's collateral"
+          ],
+          "answer": 0,
+          "explanation": "Only the risk moves; the asset stays where it is.",
+          "feedback": [
+            null,
+            "Ownership doesn't change.",
+            "No principal is exchanged.",
+            "Collateral stays with the lender."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 25
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 28
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_2",
+          "difficulty": 1,
+          "prompt": "In a TROR swap, what does the protection buyer do?",
+          "options": [
+            "Pays the total return on the credit-risky asset and receives LIBOR + spread plus compensation for losses",
+            "Receives the total return and pays LIBOR + spread",
+            "Pays a premium and is paid only on default",
+            "Buys the asset from the seller"
+          ],
+          "answer": 0,
+          "explanation": "The buyer effectively goes short the asset without losing ownership.",
+          "feedback": [
+            null,
+            "That's the protection seller.",
+            "That's a CDS.",
+            "No asset is transferred."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 26
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 27
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_3",
+          "difficulty": 1,
+          "prompt": "In a credit default swap, when does the protection seller pay?",
+          "options": [
+            "Only if a specified credit event (e.g. default) occurs",
+            "Every period, regardless of events",
+            "Always at maturity",
+            "Never"
+          ],
+          "answer": 0,
+          "explanation": "The buyer pays the swap spread; the seller makes the credit event payment.",
+          "feedback": [
+            null,
+            "That's the buyer's premium.",
+            "Only on a credit event.",
+            "It pays on a credit event."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 28
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 29
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_4",
+          "difficulty": 1,
+          "prompt": "A bank sells CDS protection on a company it doesn't lend to. What happens to its credit risk exposure?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Selling protection adds the asset's credit risk to the portfolio, with no funding needed.",
+          "feedback": [
+            null,
+            "Selling protection takes risk on.",
+            "The bank is now exposed if that company defaults."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 31
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Sell CDS protection",
+            "to": "Credit exposure ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "credit_derivatives",
+            "concentration_risk"
+          ]
+        },
+        {
+          "id": "credit_derivatives_5",
+          "difficulty": 2,
+          "prompt": "Which CDS tenor is usually the most liquid?",
+          "options": [
+            "5 years",
+            "1 year",
+            "10 years",
+            "3 months"
+          ],
+          "answer": 0,
+          "explanation": "Terms are generally one year and longer, with the 5-year tenor the most liquid.",
+          "feedback": [
+            null,
+            "Short tenors are thinly traded.",
+            "Liquidity falls again at long tenors.",
+            "Too short."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 30
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_6",
+          "difficulty": 2,
+          "prompt": "What new risk does a CDS create for both parties?",
+          "options": [
+            "Counterparty risk",
+            "Interest rate risk only",
+            "Prepayment risk",
+            "No new risk"
+          ],
+          "answer": 0,
+          "explanation": "Each side depends on the other paying what it owes.",
+          "feedback": [
+            null,
+            "Not the key new risk.",
+            "That's CMOs.",
+            "Counterparty risk is created."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 31
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_7",
+          "difficulty": 2,
+          "prompt": "A TROR swap includes a cap on LIBOR + spread. Whom does it protect?",
+          "options": [
+            "The protection seller, who pays LIBOR + spread",
+            "The protection buyer",
+            "The borrower",
+            "Neither side"
+          ],
+          "answer": 0,
+          "explanation": "A cap limits what the payer pays; a floor protects the receiver (the buyer).",
+          "feedback": [
+            null,
+            "The buyer is protected by a floor.",
+            "The borrower isn't party to the swap.",
+            "It protects the payer."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 27
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_8",
+          "difficulty": 2,
+          "prompt": "According to AFMA data, which credit derivatives dominate Australian turnover?",
+          "options": [
+            "Basket swaps/credit indices and CDS; TROR swaps are tiny",
+            "TROR swaps",
+            "Credit spread options",
+            "Securitisation"
+          ],
+          "answer": 0,
+          "explanation": "E.g. 2011–12: basket swaps and indices about $290bn, CDS about $121bn, TROR about $0.2bn.",
+          "feedback": [
+            null,
+            "TROR turnover was negligible.",
+            "Not dominant.",
+            "Not a credit derivative."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 24
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_9",
+          "difficulty": 3,
+          "prompt": "A bank has a large exposure to one mining company and wants to cut it without selling the loan or upsetting the client. What's the best tool?",
+          "options": [
+            "Buy CDS protection on the borrower: the credit risk moves while the loan stays on the books (adding counterparty risk)",
+            "Sell CDS protection on the borrower",
+            "Securitise all its loans",
+            "Lend more to the company"
+          ],
+          "answer": 0,
+          "explanation": "Buying protection reduces concentration in one name without a sale the client would notice.",
+          "feedback": [
+            null,
+            "Selling protection adds more risk.",
+            "Moves the loan off the books, which the client may notice.",
+            "That increases concentration."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 31
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 32
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_derivatives_10",
+          "difficulty": 3,
+          "prompt": "A bank holds a bond and has bought protection through a TROR swap. The issuer is downgraded and the bond's price falls. What happens?",
+          "options": [
+            "The bond's total return turns negative, the seller pays LIBOR + spread plus compensation for the loss, so the buyer is hedged",
+            "The buyer bears the full loss",
+            "The swap ends automatically",
+            "The seller now owns the bond"
+          ],
+          "answer": 0,
+          "explanation": "Downgrade → bond value ↓ → total return negative → seller covers losses → the buyer's position is protected.",
+          "feedback": [
+            null,
+            "That's what the swap protects against.",
+            "Downgrades don't end it.",
+            "Ownership never changes."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 26
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 27
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Issuer downgraded",
+            "to": "Seller pays losses → buyer hedged",
+            "steps": 2
+          },
+          "concepts": [
+            "credit_derivatives",
+            "cr_basics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sovereign_risk",
+      "name": "Sovereign risk",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "A government may restrict or block repayment to foreign creditors regardless of the borrower's credit quality, with limited legal remedies. Lending abroad is a two-step decision. Sovereign ceiling: no borrower is usually rated above its sovereign. Events: rescheduling (most common), forgiveness, repudiation (rare).",
+      "misconceptions": [
+        "Treating a strong borrower as safe regardless of its country"
+      ],
+      "questions": [
+        {
+          "id": "sovereign_risk_1",
+          "difficulty": 1,
+          "prompt": "How does sovereign risk differ from credit risk?",
+          "options": [
+            "A government can restrict or block repayment to foreign creditors regardless of the borrower's own credit quality, with limited legal remedies",
+            "Sovereign risk only affects loans to governments",
+            "Sovereign risk is just credit risk with a higher rate",
+            "They're the same thing"
+          ],
+          "answer": 0,
+          "explanation": "Repayment depends on the borrower's ability and willingness and on the government allowing it.",
+          "feedback": [
+            null,
+            "It affects private borrowers in that country too.",
+            "It's a separate layer of risk.",
+            "Sovereign risk adds a government layer."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 37
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_2",
+          "difficulty": 1,
+          "prompt": "What is the sovereign ceiling effect?",
+          "options": [
+            "No borrower in a country is usually rated better than its sovereign",
+            "Governments cap interest rates",
+            "Banks can't lend more than a set amount to foreign governments",
+            "The highest possible rating is AAA"
+          ],
+          "answer": 0,
+          "explanation": "The government can override any private borrower's ability or willingness to pay foreign creditors.",
+          "feedback": [
+            null,
+            "Not the meaning.",
+            "Not the meaning.",
+            "Not the meaning."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 42
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_3",
+          "difficulty": 1,
+          "prompt": "Which is the most common form of sovereign risk event?",
+          "options": [
+            "Debt rescheduling",
+            "Debt repudiation",
+            "Debt forgiveness",
+            "Nationalisation"
+          ],
+          "answer": 0,
+          "explanation": "Rescheduling changes contractual terms such as maturity and interest, e.g. South Korea 1998, Argentina 2001, Greece.",
+          "feedback": [
+            null,
+            "Repudiation is rare.",
+            "Reserved for the most severe cases.",
+            "Not in the lecture's list."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 43
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_4",
+          "difficulty": 1,
+          "prompt": "How does the lecture define debt repudiation?",
+          "options": [
+            "The borrower's outright cancellation of all current and future debt obligations: since WWII, only China, Cuba and North Korea",
+            "Changing a loan's maturity and interest rate",
+            "Lenders agreeing to cancel part of the debt",
+            "A temporary payment freeze"
+          ],
+          "answer": 0,
+          "explanation": "It's rare; rescheduling is far more common.",
+          "feedback": [
+            null,
+            "That's rescheduling.",
+            "That's forgiveness, decided by the lenders.",
+            "That's a form of rescheduling."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 43
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_5",
+          "difficulty": 1,
+          "prompt": "A country's government becomes more likely to default. Under the sovereign ceiling, what happens to the best rating its companies can achieve?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Companies are usually rated no better than their sovereign, so a weaker sovereign pulls the ceiling down.",
+          "feedback": [
+            "The ceiling moves with the sovereign.",
+            null,
+            "The ceiling is set by the sovereign's risk."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 42
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Sovereign risk ↑",
+            "to": "Rating ceiling for firms ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "sovereign_risk",
+            "ratings_qualitative"
+          ]
+        },
+        {
+          "id": "sovereign_risk_6",
+          "difficulty": 2,
+          "prompt": "Which firm might be rated above its host country's sovereign?",
+          "options": [
+            "A multinational subsidiary whose parent is headquartered in a much lower-risk country",
+            "A large domestic exporter",
+            "The country's central bank",
+            "Any firm with strong cash flows"
+          ],
+          "answer": 0,
+          "explanation": "That's the exception to the sovereign ceiling.",
+          "feedback": [
+            null,
+            "Still under the government's control.",
+            "It's part of the sovereign.",
+            "Strong cash flows don't stop capital controls."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 42
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_7",
+          "difficulty": 2,
+          "prompt": "Lending to a firm abroad is a two-step decision. What are the steps?",
+          "options": [
+            "Assess the borrower's credit quality, then the sovereign risk of its country",
+            "Check the exchange rate, then the interest rate",
+            "Assess sovereign risk, then ignore the borrower",
+            "Check collateral, then the loan size"
+          ],
+          "answer": 0,
+          "explanation": "Both must be acceptable.",
+          "feedback": [
+            null,
+            "Not the two steps.",
+            "The borrower still matters.",
+            "Not the two steps."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 41
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_8",
+          "difficulty": 2,
+          "prompt": "Why have most international debt problems since WWII been reschedulings rather than outright defaults?",
+          "options": [
+            "Debts were mostly bank loans (few lenders), syndicates of the same FIs were cohesive, and cross-default provisions prevented selective defaults",
+            "Bonds are easier to reschedule",
+            "Governments are legally barred from defaulting",
+            "Lenders always forgive debt"
+          ],
+          "answer": 0,
+          "explanation": "Fewer, cohesive lenders make negotiating new terms easier.",
+          "feedback": [
+            null,
+            "Bonds involve many dispersed holders, which is harder.",
+            "No such bar.",
+            "Forgiveness is rare and conditional."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 44
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_9",
+          "difficulty": 2,
+          "prompt": "In 2011 Hungary let borrowers repay Swiss-franc mortgages at exchange rates about 25% below market. Why is this sovereign risk rather than credit risk?",
+          "options": [
+            "The government changed the repayment terms to foreign lenders, regardless of borrowers' ability to pay",
+            "Hungarian borrowers became unable to pay",
+            "The banks' collateral fell in value",
+            "The forint appreciated"
+          ],
+          "answer": 0,
+          "explanation": "Banks lost about US$1.7bn and accused Hungary of expropriation.",
+          "feedback": [
+            null,
+            "Borrowers' ability wasn't the cause.",
+            "That's security risk.",
+            "The forint fell over 40%."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 38
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 39
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_10",
+          "difficulty": 2,
+          "prompt": "Why are lenders such as the IMF and World Bank willing to forgive the debts of the poorest countries?",
+          "options": [
+            "Forgiveness, conditional on poverty-reduction reforms, avoids outright repudiation",
+            "It's required by law",
+            "Because the debts are small",
+            "To raise their own credit ratings"
+          ],
+          "answer": 0,
+          "explanation": "Unlike rescheduling and repudiation, forgiveness is decided by the lenders.",
+          "feedback": [
+            null,
+            "It's voluntary.",
+            "Size isn't the reason.",
+            "Not the reason."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 43
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_11",
+          "difficulty": 3,
+          "prompt": "A healthy exporter in a country that imposes capital controls owes a foreign bank. What happens to the loan?",
+          "options": [
+            "The government blocks foreign-currency payments, so the borrower can't pay despite its strong finances, and the loan may be rescheduled or impaired",
+            "It's repaid as normal because the borrower is healthy",
+            "The bank can sue the government and recover in full",
+            "The loan's credit risk falls"
+          ],
+          "answer": 0,
+          "explanation": "Government restriction → payment blocked → default or rescheduling unrelated to the firm's own credit quality. Legal remedies are limited.",
+          "feedback": [
+            null,
+            "Its ability to pay doesn't matter if payment is blocked.",
+            "Legal remedies are very limited.",
+            "The risk rises."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 37
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Capital controls",
+            "to": "Payment blocked → loan impaired",
+            "steps": 2
+          },
+          "concepts": [
+            "sovereign_risk",
+            "cr_basics"
+          ]
+        },
+        {
+          "id": "sovereign_risk_12",
+          "difficulty": 3,
+          "prompt": "A bank is considering a loan to a domestic firm rated AA in a country whose sovereign is rated BB. How should it treat the loan's risk?",
+          "options": [
+            "As no better than BB: under the sovereign ceiling the government can block repayment whatever the firm's strength",
+            "As AA, because the firm's own credit quality is what matters",
+            "As halfway between AA and BB",
+            "As risk-free if the firm exports"
+          ],
+          "answer": 0,
+          "explanation": "Two-step decision: the firm passes step one, but the sovereign step caps the risk. Only subsidiaries of parents in safer countries are usual exceptions.",
+          "feedback": [
+            null,
+            "That skips the sovereign step.",
+            "There's no averaging rule.",
+            "Exporters can still be hit by capital controls."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 41
+            },
+            {
+              "doc": "week08_lecture",
+              "page": 42
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "country_risk_evaluation",
+      "name": "Country risk evaluation",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "Outside ratings (Euromoney, EIU, Institutional Investor); internal statistical models using ratios (DSR, import ratio, investment ratio, export variance, money growth) to separate reschedulers; market data (secondary LDC debt prices); and a combined approach regressing prices on ratios.",
+      "misconceptions": [
+        "Assuming every country-risk scale has 100 = safest"
+      ],
+      "questions": [
+        {
+          "id": "country_risk_evaluation_1",
+          "difficulty": 1,
+          "prompt": "On the Euromoney Index, what does a score of 100 mean?",
+          "options": [
+            "No risk (0 = maximum risk)",
+            "Maximum risk",
+            "Average risk",
+            "Certain default"
+          ],
+          "answer": 0,
+          "explanation": "Euromoney combines economic and political factors on a 0–100 scale.",
+          "feedback": [
+            null,
+            "That's 0.",
+            "Not the scale's meaning.",
+            "That's 0."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 45
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_2",
+          "difficulty": 1,
+          "prompt": "What's the main drawback of outside country-risk ratings?",
+          "options": [
+            "They aren't tailored: every bank gets the same rating regardless of its own exposures",
+            "They're expensive and slow",
+            "They can't compare countries",
+            "They're forward-looking only"
+          ],
+          "answer": 0,
+          "explanation": "They are cheap and allow comparisons, but they're one-size-fits-all and may reflect a narrow view.",
+          "feedback": [
+            null,
+            "They're cheap and quick.",
+            "Comparison is a strength.",
+            "Not the drawback."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 45
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_3",
+          "difficulty": 1,
+          "prompt": "A country's exports fall while its debt payments are unchanged. What happens to its debt service ratio?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Exports are the denominator, so the DSR rises, and so does the probability of rescheduling.",
+          "feedback": [
+            null,
+            "A smaller denominator raises the ratio.",
+            "Exports are in the formula."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 46
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "DSR = \\frac{\\text{Interest} + \\text{Amortisation on debt}}{\\text{Exports}}",
+          "changes": 1
+        },
+        {
+          "id": "country_risk_evaluation_4",
+          "difficulty": 1,
+          "prompt": "A country's investment ratio (real investment ÷ GNP) rises. What usually happens to its probability of rescheduling?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "The lecture gives a 'likely negative' link: more investment builds future productive capacity.",
+          "feedback": [
+            "The investment ratio's link is likely negative.",
+            null,
+            "It's one of the model's ratios."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 46
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Investment ratio ↑",
+            "to": "Rescheduling probability ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "country_risk_evaluation",
+            "sovereign_risk"
+          ]
+        },
+        {
+          "id": "country_risk_evaluation_5",
+          "difficulty": 1,
+          "prompt": "A country's domestic money supply growth (ΔM/M) rises. What happens to its probability of rescheduling?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Positive link: faster money growth signals inflation, weakening the currency and economy.",
+          "feedback": [
+            null,
+            "The link is positive.",
+            "It's one of the model's ratios."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 46
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Money supply growth ↑",
+            "to": "Rescheduling probability ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "country_risk_evaluation",
+            "sovereign_risk"
+          ]
+        },
+        {
+          "id": "country_risk_evaluation_6",
+          "difficulty": 2,
+          "prompt": "Which outside rating uses a 100-point scale where 100 = MAXIMUM risk?",
+          "options": [
+            "The Economist Intelligence Unit",
+            "Euromoney Index",
+            "Institutional Investor Index",
+            "All of them"
+          ],
+          "answer": 0,
+          "explanation": "Euromoney and Institutional Investor both use 100 = no risk / no default possibility.",
+          "feedback": [
+            null,
+            "Euromoney: 100 = no risk.",
+            "Institutional Investor: 100 = no default possibility.",
+            "They differ."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 45
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_7",
+          "difficulty": 2,
+          "prompt": "A country pays $2bn in interest and $3bn in amortisation, and exports $20bn. What is its debt service ratio?",
+          "options": [
+            "25%",
+            "10%",
+            "15%",
+            "400%"
+          ],
+          "answer": 0,
+          "explanation": "DSR = (2 + 3) ÷ 20 = 25%.",
+          "feedback": [
+            null,
+            "That leaves out amortisation.",
+            "That leaves out interest.",
+            "That's upside down."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 46
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_8",
+          "difficulty": 2,
+          "prompt": "Which problem of statistical country-risk models concerns strikes, corruption and elections?",
+          "options": [
+            "Political risk factors aren't captured by most models",
+            "Measurement of key variables",
+            "Population groups",
+            "Incentive aspects"
+          ],
+          "answer": 0,
+          "explanation": "The Corruption Perceptions Index is one way to bring this in.",
+          "feedback": [
+            null,
+            "That's about data quality.",
+            "That's about finer distinctions between countries.",
+            "That's about the costs and benefits of default."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 47
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_9",
+          "difficulty": 2,
+          "prompt": "Why do statistical models' country-by-country approaches miss part of the risk?",
+          "options": [
+            "They ignore diversification: they should separate the systematic (cross-country) component of default risk from the country-specific one",
+            "They use too many ratios",
+            "They only use market prices",
+            "They're too tailored"
+          ],
+          "answer": 0,
+          "explanation": "This is the 'portfolio aspects' criticism.",
+          "feedback": [
+            null,
+            "Not the criticism.",
+            "They use ratios, not prices.",
+            "Tailoring is a strength."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 48
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_10",
+          "difficulty": 3,
+          "prompt": "Using the combined approach, a country's LDC debt trades well below the price predicted from its ratios. What does this suggest?",
+          "options": [
+            "Extra risk not captured by the ratios, often political",
+            "The debt is underpriced and safe to buy",
+            "The model's ratios are all wrong",
+            "The country is about to repudiate"
+          ],
+          "answer": 0,
+          "explanation": "The regression predicts a price from the ratios; a lower actual price signals something extra worrying investors.",
+          "feedback": [
+            null,
+            "The market is pricing in more risk.",
+            "It signals extra risk, not a broken model.",
+            "That's too strong a conclusion."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 51
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "country_risk_evaluation_11",
+          "difficulty": 3,
+          "prompt": "Which ratios did the market-data approach find significantly affect LDC loan prices?",
+          "options": [
+            "Debt service ratio, import ratio, accumulated debt in arrears, and loan loss provisions against LDC loans",
+            "Investment ratio and money supply growth only",
+            "Altman's five ratios",
+            "Loan-to-value and debt-to-income"
+          ],
+          "answer": 0,
+          "explanation": "The approach faces the same criticisms as statistical models.",
+          "feedback": [
+            null,
+            "Not the significant set.",
+            "Those are for firms.",
+            "Those are mortgage ratios."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 51
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "sovereign_risk_mechanisms",
+      "name": "Dealing with sovereign risk exposure",
+      "week": 8,
+      "prerequisites": [],
+      "definition": "Loan sales (cost: the loss; benefit: freed resources and a strength signal), loan-for-bond swaps such as Brady bonds (marketable and collateralised, but longer maturity and less than $1 of bond per $1 of loan), debt-for-equity swaps, and multiyear restructuring agreements (MYRAs). Concessionality = PV given up in a MYRA.",
+      "misconceptions": [
+        "Forgetting a loan-for-bond swap gives less than $1 of bond per $1 of loan"
+      ],
+      "questions": [
+        {
+          "id": "sovereign_risk_mechanisms_1",
+          "difficulty": 1,
+          "prompt": "What is concessionality in a MYRA?",
+          "options": [
+            "The amount a bank gives up in present-value terms as a result of the restructuring",
+            "The fee charged for restructuring",
+            "The new loan's interest rate",
+            "The grace period"
+          ],
+          "answer": 0,
+          "explanation": "It depends on the fee, rate, grace period, maturity and options.",
+          "feedback": [
+            null,
+            "The fee reduces concessionality.",
+            "One of the terms.",
+            "One of the terms."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 54
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_mechanisms_2",
+          "difficulty": 1,
+          "prompt": "What's the main cost of selling an LDC loan?",
+          "options": [
+            "The loss on the sale",
+            "Higher reserve requirements",
+            "A longer maturity",
+            "Counterparty risk"
+          ],
+          "answer": 0,
+          "explanation": "The benefits are removal from the balance sheet and a signal of strength.",
+          "feedback": [
+            null,
+            "Not a cost listed.",
+            "That's a loan-for-bond cost.",
+            "That's a CDS issue."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 52
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_mechanisms_3",
+          "difficulty": 1,
+          "prompt": "In a MYRA, the bank charges a higher restructuring fee and everything else is unchanged. What happens to concessionality?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "The fee offsets part of what the bank gives up, so concessionality falls.",
+          "feedback": [
+            "The fee works in the bank's favour.",
+            null,
+            "The fee is one of the terms that sets it."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 54
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Restructuring fee ↑",
+            "to": "Concessionality ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "sovereign_risk_mechanisms",
+            "sovereign_risk"
+          ]
+        },
+        {
+          "id": "sovereign_risk_mechanisms_4",
+          "difficulty": 2,
+          "prompt": "What are the benefits and costs of loan-for-bond swaps such as Brady bonds?",
+          "options": [
+            "Bonds are marketable and liquid, and Brady bonds are collateralised and usually senior; but they have longer maturities and give less than $1 of bond per $1 of loan",
+            "They remove all sovereign risk at no cost",
+            "They shorten maturities but are illiquid",
+            "They give more than $1 of bond per $1 of loan"
+          ],
+          "answer": 0,
+          "explanation": "Low transaction costs, small bid-ask spreads and efficient settlement make bonds easier to sell.",
+          "feedback": [
+            null,
+            "There are costs.",
+            "That's the wrong way round.",
+            "Less than $1 per $1."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 53
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_mechanisms_5",
+          "difficulty": 2,
+          "prompt": "Why can selling an LDC loan at a loss send a positive signal?",
+          "options": [
+            "It shows the rest of the balance sheet is strong enough to absorb the loss",
+            "It means the loan was worthless",
+            "It raises the bank's capital",
+            "It ends the bank's exposure to all countries"
+          ],
+          "answer": 0,
+          "explanation": "That signalling effect is listed as a benefit.",
+          "feedback": [
+            null,
+            "It sold for something.",
+            "The loss reduces capital.",
+            "Only that exposure."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 52
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "sovereign_risk_mechanisms_6",
+          "difficulty": 2,
+          "prompt": "In a MYRA, the new loan's maturity is lengthened and its interest rate cut. What happens to concessionality?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Both terms lower the present value of what the bank will receive, so it gives up more.",
+          "feedback": [
+            null,
+            "Both changes favour the borrower.",
+            "Maturity and rate are key terms."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 54
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Maturity ↑, rate ↓",
+            "to": "Concessionality ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "sovereign_risk_mechanisms",
+            "sovereign_risk"
+          ]
+        },
+        {
+          "id": "sovereign_risk_mechanisms_7",
+          "difficulty": 3,
+          "prompt": "A bank swaps $100m of LDC loans for Brady bonds. Which outcome is consistent with the lecture?",
+          "options": [
+            "It receives less than $100m face value in bonds but gains a marketable, collateralised, usually senior claim with a longer maturity",
+            "It receives more than $100m in bonds",
+            "Its exposure becomes risk-free",
+            "Its maturity shortens"
+          ],
+          "answer": 0,
+          "explanation": "A loan-for-bond swap trades face value for marketability and seniority.",
+          "feedback": [
+            null,
+            "It's less than $1 for $1.",
+            "Collateral is full or partial; risk remains.",
+            "Bonds usually have longer maturities."
+          ],
+          "sources": [
+            {
+              "doc": "week08_lecture",
+              "page": 53
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "note": "Course documents questions can cite (lecture slides only; personal notes are never bundled or shown).",
+  "docs": {
+    "week05_lecture": {
+      "file": "week05_lecture_credit_risk_part1.pdf",
+      "title": "Lecture 5 · Credit Risk: Part I",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 49
+    },
+    "week07_lecture": {
+      "file": "week07_lecture_credit_risk_part2.pdf",
+      "title": "Lecture 6 · Credit Risk: Part II",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 39
+    },
+    "week08_lecture": {
+      "file": "week08_lecture_credit_and_sovereign_risk.pdf",
+      "title": "Lecture 7 · Credit Risk: Part III & Sovereign Risk",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 55
+    },
+    "week09_lecture": {
+      "file": "week09_lecture_liquidity_risk.pdf",
+      "title": "Lecture 9 · Liquidity Risk",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 39
+    },
+    "week09_di_lecture": {
+      "file": "week09_lecture_deposit_insurance.pdf",
+      "title": "Lecture 10 · Deposit Insurance",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 42
+    },
+    "week10_lecture": {
+      "file": "week10_lecture_capital_adequacy.pdf",
+      "title": "Lecture 11 · Capital Adequacy",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 40
+    },
+    "week11_lecture": {
+      "file": "week11_lecture_fx_risk.pdf",
+      "title": "Lecture 12 · Foreign Exchange Risk",
+      "kind": "lecture",
+      "unit": "Slide",
+      "pages": 21
+    }
+  }
+}

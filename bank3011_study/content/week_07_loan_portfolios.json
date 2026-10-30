@@ -1,0 +1,1847 @@
+{
+  "unit": "BANK3011",
+  "week": 7,
+  "title": "Credit Risk: Part II (Loan Portfolios)",
+  "source": "Lecture 6 · Credit Risk: Part II",
+  "concepts": [
+    {
+      "id": "concentration_risk",
+      "name": "Loan concentration risk",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Having large exposures to one borrower, industry, region, asset class or funding source, so a single adverse shock causes large losses. It can sit on either side of the balance sheet (Penn Square: assets; SVB: deposits plus long-duration securities).",
+      "misconceptions": [
+        "Thinking concentration only exists on the asset side"
+      ],
+      "questions": [
+        {
+          "id": "concentration_risk_1",
+          "difficulty": 1,
+          "prompt": "What is loan concentration risk?",
+          "options": [
+            "Having large exposures to one borrower, industry, region, asset class or funding source, so one adverse shock causes big losses",
+            "The risk that any single borrower defaults",
+            "The risk that market interest rates change",
+            "Holding too many small loans to manage efficiently"
+          ],
+          "answer": 0,
+          "explanation": "Concentration risk is about exposure to a common shock: many exposures that go bad together.",
+          "feedback": [
+            null,
+            "That's default risk on one loan; concentration is about many exposures sharing a shock.",
+            "That's interest rate risk.",
+            "Many small, unrelated loans are diversified, the opposite of concentrated."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_risk_2",
+          "difficulty": 1,
+          "prompt": "In the Penn Square (1982) failure, where was the concentration?",
+          "options": [
+            "Asset side: loans to oil and gas companies",
+            "Liability side: deposits from tech and VC firms",
+            "Long-duration government bonds",
+            "Foreign-currency mortgages"
+          ],
+          "answer": 0,
+          "explanation": "Energy prices fell, oil and gas borrowers couldn't repay, and the loan losses wiped out capital.",
+          "feedback": [
+            null,
+            "That was SVB in 2023.",
+            "That was part of SVB's problem.",
+            "That's the Hungary/Croatia sovereign cases."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_risk_3",
+          "difficulty": 2,
+          "prompt": "Why did SVB (2023) fail?",
+          "options": [
+            "Rates rose, cutting the value of its long-duration bonds, and a run by its concentrated tech/VC depositors forced it to sell them at a loss",
+            "Its loans to oil and gas companies defaulted",
+            "Its tech borrowers defaulted on their loans",
+            "Foreign governments blocked repayments"
+          ],
+          "answer": 0,
+          "explanation": "SVB's deposits tripled, it had few loans to make, so it bought long-dated bonds. Rate rises cut their value; deposit withdrawals forced sales that turned paper losses into realised ones.",
+          "feedback": [
+            null,
+            "That's Penn Square.",
+            "SVB's problem wasn't loan defaults; its clients didn't need many loans.",
+            "That's sovereign risk, not SVB."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_risk_4",
+          "difficulty": 1,
+          "prompt": "A bank's exposure to a single industry rises. What happens to the loss it would suffer from a shock to that industry?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "More exposure to one sector means a sector-wide shock hits a bigger share of the book.",
+          "feedback": [
+            null,
+            "Concentrating raises, not lowers, the damage from a common shock.",
+            "Exposure size drives the loss."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Exposure to one sector ↑",
+            "to": "Loss from a sector shock ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "concentration_risk",
+            "concentration_limits"
+          ]
+        },
+        {
+          "id": "concentration_risk_5",
+          "difficulty": 2,
+          "prompt": "SVB's depositors withdraw funds just as rising rates have cut the value of its bond portfolio. What happens to its losses?",
+          "options": [
+            "Paper losses become realised losses because the bank must sell bonds at low prices to pay depositors",
+            "The losses disappear because the bonds are held to maturity",
+            "Losses fall, because higher rates raise bond prices",
+            "No effect: deposits and bonds sit on different sides of the balance sheet"
+          ],
+          "answer": 0,
+          "explanation": "Rates ↑ → bond values ↓ (paper loss) → deposit run → forced sales → realised losses that eat equity.",
+          "feedback": [
+            null,
+            "The run is what stopped SVB holding them to maturity.",
+            "Higher rates lower existing bond prices.",
+            "That's exactly why two-sided concentration is dangerous: the sides feed each other."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Rates ↑ + deposit run",
+            "to": "Forced sales → realised losses",
+            "steps": 2
+          },
+          "concepts": [
+            "concentration_risk",
+            "liquidity_risk_basics"
+          ]
+        },
+        {
+          "id": "concentration_risk_6",
+          "difficulty": 3,
+          "prompt": "What does SVB show about concentration on BOTH sides of the balance sheet?",
+          "options": [
+            "The two sides feed each other: the asset-side losses only became fatal because the liability-side run forced sales",
+            "Asset-side and liability-side concentration always offset each other",
+            "Only liability-side concentration matters",
+            "Only asset-side concentration matters"
+          ],
+          "answer": 0,
+          "explanation": "Concentrated depositors (liabilities) plus concentrated long-duration securities (assets): a shock to one forced losses on the other.",
+          "feedback": [
+            null,
+            "They amplified each other.",
+            "Without the bond losses the withdrawals could have been met.",
+            "Without the run the bonds could have been held to maturity."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "migration_analysis",
+      "name": "Migration analysis and transition matrices",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Tracking how borrowers move between rating grades. Sort loans by rating, re-rate at year end, and compare with the historical transition matrix; if a sector deteriorates faster than history, curtail lending to it.",
+      "misconceptions": [
+        "Reading the transition matrix's diagonal as default rates"
+      ],
+      "questions": [
+        {
+          "id": "migration_analysis_1",
+          "difficulty": 1,
+          "prompt": "What does migration analysis track?",
+          "options": [
+            "How borrowers move between rating grades over time",
+            "How interest rates move over time",
+            "How deposits move between banks",
+            "How loans move between bank branches"
+          ],
+          "answer": 0,
+          "explanation": "A migration is a move from one grade to another, e.g. a downgrade from A to BBB.",
+          "feedback": [
+            null,
+            "That's interest rate risk.",
+            "That's about funding, not credit quality.",
+            "Not the meaning of migration here."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 4
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_2",
+          "difficulty": 1,
+          "prompt": "In a transition matrix, the largest number in each row is usually...",
+          "options": [
+            "The probability of staying in the same rating: ratings are 'sticky'",
+            "The probability of default",
+            "The probability of the rating being withdrawn",
+            "The probability of an upgrade"
+          ],
+          "answer": 0,
+          "explanation": "In the Moody's matrix, e.g. 82.52% of Baa issuers are still Baa a year later.",
+          "feedback": [
+            null,
+            "Default probabilities are small except for the lowest grades.",
+            "WR is a single-digit percentage.",
+            "Upgrades are a small share of each row."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_3",
+          "difficulty": 1,
+          "prompt": "Moving down the rating scale (from Aaa towards Caa-C), what happens to the one-year default rate?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Default risk rises steeply as ratings fall: 0.00% for Aaa versus 12.41% for Caa-C in the Moody's matrix.",
+          "feedback": [
+            null,
+            "Lower grades default more, not less.",
+            "Default rates differ sharply by grade."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 6
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Rating ↓",
+            "to": "Default rate ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "migration_analysis",
+            "cr_basics"
+          ]
+        },
+        {
+          "id": "migration_analysis_4",
+          "difficulty": 1,
+          "prompt": "What does 'WR' mean in the Moody's transition matrix?",
+          "options": [
+            "Rating withdrawn: rated at the start of the year but unrated at the end (e.g. debt repaid, firm acquired)",
+            "Written-off loans",
+            "The worst rating category",
+            "A weighted average rating"
+          ],
+          "answer": 0,
+          "explanation": "WR is the share of issuers whose rating was withdrawn during the year; it isn't a default.",
+          "feedback": [
+            null,
+            "Defaults have their own column.",
+            "Caa-C is the lowest grade.",
+            "Not a weighting."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_5",
+          "difficulty": 2,
+          "prompt": "This year 8% of a bank's BBB loans were downgraded, against a historical average of 5%. What should the bank do?",
+          "options": [
+            "Curtail lending to that sector or loan class: it is deteriorating faster than history suggests",
+            "Increase lending, because ratings are sticky",
+            "Nothing: downgrades aren't defaults",
+            "Raise its concentration limit for the sector"
+          ],
+          "answer": 0,
+          "explanation": "Step 3 of migration analysis: compare actual deterioration with the historical matrix and cut lending where it's worse.",
+          "feedback": [
+            null,
+            "Faster-than-normal downgrades are a warning sign.",
+            "Downgrades lower loan values and signal rising PD.",
+            "The response is to reduce, not increase, exposure."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 4
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_6",
+          "difficulty": 2,
+          "prompt": "Of 200 loans rated BBB at the start of the year, 170 are still BBB and 10 were upgraded; the rest were downgraded. What share was downgraded?",
+          "options": [
+            "10%",
+            "5%",
+            "15%",
+            "85%"
+          ],
+          "answer": 0,
+          "explanation": "200 − 170 − 10 = 20 downgraded; 20 ÷ 200 = 10%.",
+          "feedback": [
+            null,
+            "That's the upgraded share (10 ÷ 200).",
+            "That's the share that moved at all (30 ÷ 200).",
+            "That's the share that stayed BBB."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_7",
+          "difficulty": 3,
+          "prompt": "Using the Moody's matrix, what share of Baa issuers end the year below investment grade (Ba or lower) or in default?",
+          "options": [
+            "5.63%",
+            "4.68%",
+            "0.28%",
+            "13.34%"
+          ],
+          "answer": 0,
+          "explanation": "Ba 4.68% + B 0.61% + Caa-C 0.06% + Default 0.28% = 5.63%. Baa3 is the lowest investment grade, so Ba and below is speculative.",
+          "feedback": [
+            null,
+            "That's only the move to Ba.",
+            "That's only default.",
+            "That adds the 7.71% withdrawn (WR), which isn't a downgrade."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "migration_analysis_8",
+          "difficulty": 3,
+          "prompt": "In the lecture's hypothetical matrix, a grade-2 loan has a 0.12 chance of moving to grade 1, 0.83 of staying, 0.03 of moving to grade 3 and 0.02 of defaulting. Of 500 grade-2 loans, how many are expected to deteriorate (to grade 3 or default)?",
+          "options": [
+            "25",
+            "15",
+            "10",
+            "85"
+          ],
+          "answer": 0,
+          "explanation": "(0.03 + 0.02) × 500 = 25.",
+          "feedback": [
+            null,
+            "That counts only the move to grade 3.",
+            "That counts only defaults.",
+            "That's 0.17 × 500: everything that leaves grade 2, including upgrades."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 5
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "concentration_limits",
+      "name": "Concentration limits",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "External limits on the maximum loan size to a borrower, sector or segment (as a % of capital). Concentration limit = Maximum loss as % of capital ÷ Loss rate, where loss rate = 1 − recovery rate. They cap EAD, not PD.",
+      "misconceptions": [
+        "Thinking a higher recovery rate lowers the limit",
+        "Capping correlated sectors separately and assuming the risk is gone"
+      ],
+      "questions": [
+        {
+          "id": "concentration_limits_1",
+          "difficulty": 1,
+          "prompt": "What do concentration limits cap?",
+          "options": [
+            "The maximum exposure (loan size) to a borrower, sector or segment, i.e. EAD, not PD",
+            "Each borrower's probability of default",
+            "The interest rate the bank can charge",
+            "The bank's total deposits"
+          ],
+          "answer": 0,
+          "explanation": "Limits restrict how much is on the line; they don't make borrowers less likely to default.",
+          "feedback": [
+            null,
+            "Limits don't change how likely a borrower is to default.",
+            "Not a rate cap.",
+            "They apply to lending, not deposits."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 8
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_limits_2",
+          "difficulty": 1,
+          "prompt": "In this formula, what does the loss rate represent?",
+          "options": [
+            "The share of a loan the bank fails to recover if the borrower defaults (1 − recovery rate)",
+            "The share of a loan the bank recovers",
+            "The maximum loss the bank will accept",
+            "The probability of default"
+          ],
+          "answer": 0,
+          "explanation": "Loss rate = 1 − recovery rate, e.g. 70% recovery gives a 30% loss rate.",
+          "feedback": [
+            null,
+            "That's the recovery rate; the loss rate is 1 minus it.",
+            "That's the numerator.",
+            "PD isn't in the formula."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 9
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 12
+            }
+          ],
+          "type": "equation",
+          "subtype": "variables",
+          "equation": "\\text{Concentration limit} = \\frac{\\text{Maximum loss as \\% of capital}}{\\text{Loss rate}}",
+          "changes": 1
+        },
+        {
+          "id": "concentration_limits_3",
+          "difficulty": 1,
+          "prompt": "The expected recovery rate on defaulted loans rises. What happens to the concentration limit?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Higher recovery → lower loss rate (denominator) → higher limit: each dollar lent costs less if it defaults.",
+          "feedback": [
+            null,
+            "A smaller denominator makes the limit bigger.",
+            "The loss rate depends on the recovery rate."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 9
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 12
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "\\text{Concentration limit} = \\frac{\\text{Maximum loss as \\% of capital}}{\\text{Loss rate}}",
+          "changes": 1
+        },
+        {
+          "id": "concentration_limits_4",
+          "difficulty": 2,
+          "prompt": "An FI sets a maximum loss of 2% of capital and a concentration limit of 25% for a firm. What is the implied loss rate?",
+          "options": [
+            "8%",
+            "50%",
+            "12.5%",
+            "0.5%"
+          ],
+          "answer": 0,
+          "explanation": "25% = 2% ÷ loss rate → loss rate = 0.02 ÷ 0.25 = 8%.",
+          "feedback": [
+            null,
+            "That's 0.25 ÷ 0.5; divide the maximum loss by the limit.",
+            "That's 0.25 ÷ 2.",
+            "That's 0.02 × 0.25."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 10
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_limits_5",
+          "difficulty": 2,
+          "prompt": "A bank's concentration limit is 20% of capital and its expected recovery on defaulted loans is 70%. What maximum loss does it permit, as a % of capital?",
+          "options": [
+            "6%",
+            "14%",
+            "28.6%",
+            "66.7%"
+          ],
+          "answer": 0,
+          "explanation": "Maximum loss = limit × loss rate = 0.20 × (1 − 0.70) = 0.06.",
+          "feedback": [
+            null,
+            "That uses the recovery rate (0.20 × 0.70) instead of the loss rate.",
+            "That's 0.20 ÷ 0.70.",
+            "That's 0.20 ÷ 0.30."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_limits_6",
+          "difficulty": 2,
+          "prompt": "Why does the lecture recommend aggregate limits for industries such as real estate, residential and construction?",
+          "options": [
+            "Their performance is highly correlated, so they tend to fail together",
+            "They're the most profitable sectors",
+            "Regulators prohibit lending to them",
+            "They have no collateral"
+          ],
+          "answer": 0,
+          "explanation": "Separate caps on correlated sectors don't stop them all going bad at once, so they're capped together.",
+          "feedback": [
+            null,
+            "Profitability isn't the reason.",
+            "They're restricted, not banned.",
+            "They're usually secured."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 8
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_limits_7",
+          "difficulty": 2,
+          "prompt": "Expected recovery falls from 70% to 40%, and the maximum loss the bank accepts is unchanged. What happens to the concentration limit?",
+          "options": [
+            "Halves",
+            "Doubles",
+            "Falls by 30%",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "The loss rate doubles from 30% to 60%, and it's in the denominator, so the limit halves.",
+          "feedback": [
+            null,
+            "A higher loss rate lowers the limit.",
+            "Work through the loss rate: 0.3 → 0.6 doubles it.",
+            "The limit depends on the loss rate."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 9
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 12
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "\\text{Concentration limit} = \\frac{\\text{Maximum loss as \\% of capital}}{\\text{Loss rate}}",
+          "changes": 1
+        },
+        {
+          "id": "concentration_limits_8",
+          "difficulty": 3,
+          "prompt": "A bank accepts a maximum loss of 3% of capital and expects 60% recovery on defaults. What concentration limit should it set?",
+          "options": [
+            "7.5% of capital",
+            "5% of capital",
+            "1.2% of capital",
+            "1.8% of capital"
+          ],
+          "answer": 0,
+          "explanation": "Loss rate = 1 − 0.60 = 0.40; limit = 0.03 ÷ 0.40 = 7.5%.",
+          "feedback": [
+            null,
+            "That divides by the recovery rate (0.60) instead of the loss rate.",
+            "That multiplies by the loss rate.",
+            "That multiplies by the recovery rate."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 9
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "concentration_limits_9",
+          "difficulty": 3,
+          "prompt": "A bank caps real estate, residential and construction lending at 10% of capital each. Why might its true concentration risk still be high?",
+          "options": [
+            "These sectors are highly correlated, so separate caps limit concentration in form but not in substance",
+            "Because each cap is too low",
+            "Because limits change PD rather than EAD",
+            "Because geographical limits always override sector limits"
+          ],
+          "answer": 0,
+          "explanation": "Correlated sectors fail together, so three 10% caps behave like one 30% exposure. Measuring correlation directly is what MPT adds; concentration limits were also criticised as arbitrary.",
+          "feedback": [
+            null,
+            "The issue is correlation, not the level of each cap.",
+            "Limits cap EAD; they don't change PD.",
+            "Geographic limits are an extra tool, not an override."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 8
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "mpt_portfolio",
+      "name": "Modern Portfolio Theory (MPT) for loan portfolios",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Portfolio return is a weighted average of loan returns; portfolio variance adds weighted variances plus covariance terms. Diversification reduces risk when loans' default risks are imperfectly correlated (ρ < 1). The minimum risk portfolio has the lowest variance for a given return; efficient portfolios lie on the upper frontier.",
+      "misconceptions": [
+        "Thinking correlation changes expected portfolio return"
+      ],
+      "questions": [
+        {
+          "id": "mpt_portfolio_1",
+          "difficulty": 1,
+          "prompt": "What is the fundamental lesson of MPT for a bank's loan book?",
+          "options": [
+            "Credit risk can be reduced by diversification when loans' default risks are not perfectly correlated",
+            "Concentrate lending in the loans with the highest return",
+            "Diversification always raises expected return",
+            "Correlation doesn't affect portfolio risk"
+          ],
+          "answer": 0,
+          "explanation": "A bank is like an investor choosing loan weights to maximise return while minimising risk.",
+          "feedback": [
+            null,
+            "That ignores risk.",
+            "Diversification reduces risk; return is a weighted average.",
+            "Correlation is what drives the diversification benefit."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 14
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 17
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "mpt_portfolio_2",
+          "difficulty": 1,
+          "prompt": "The correlation between two loans falls. What happens to the portfolio's expected return?",
+          "options": [
+            "No change",
+            "Increases",
+            "Decreases",
+            "Becomes zero"
+          ],
+          "answer": 0,
+          "explanation": "Expected return is a weighted average of the loans' returns; correlation never appears in it.",
+          "feedback": [
+            null,
+            "Correlation affects risk, not expected return.",
+            "Correlation affects risk, not expected return.",
+            "It's still the weighted average."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 13
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "\\bar{R}_p = \\sum_{i=1}^{n} X_i \\bar{R}_i",
+          "changes": 1
+        },
+        {
+          "id": "mpt_portfolio_3",
+          "difficulty": 1,
+          "prompt": "Which term in this equation can be negative?",
+          "options": [
+            "2X₁X₂ρ₁₂σ₁σ₂, when the correlation ρ₁₂ is negative",
+            "X₁²σ₁²",
+            "X₂²σ₂²",
+            "None of them"
+          ],
+          "answer": 0,
+          "explanation": "Weights and standard deviations are positive, so only ρ can flip a sign, and ρ only appears in the covariance term.",
+          "feedback": [
+            null,
+            "Squares are never negative.",
+            "Squares are never negative.",
+            "The covariance term is negative when ρ < 0."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 13
+            }
+          ],
+          "type": "equation",
+          "subtype": "variables",
+          "equation": "\\sigma_p^2 = X_1^2\\sigma_1^2 + X_2^2\\sigma_2^2 + 2X_1X_2\\rho_{12}\\sigma_1\\sigma_2",
+          "changes": 1
+        },
+        {
+          "id": "mpt_portfolio_4",
+          "difficulty": 1,
+          "prompt": "The correlation between the default risks of two loans falls. What happens to the portfolio's risk?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Lower correlation → smaller (or negative) covariance term → lower portfolio variance.",
+          "feedback": [
+            "Lower correlation means more diversification, not less.",
+            null,
+            "Portfolio variance depends on ρ."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 13
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 14
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "ρ ↓",
+            "to": "Portfolio risk ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "mpt_portfolio",
+            "concentration_risk"
+          ]
+        },
+        {
+          "id": "mpt_portfolio_5",
+          "difficulty": 1,
+          "prompt": "What is the minimum risk portfolio?",
+          "options": [
+            "The combination of assets with the lowest variance for a given expected return",
+            "The portfolio with the highest expected return",
+            "A portfolio holding only risk-free assets",
+            "A portfolio with one loan"
+          ],
+          "answer": 0,
+          "explanation": "Many mixes can hit a target return; the minimum risk one does it with the lowest variance.",
+          "feedback": [
+            null,
+            "That ignores risk.",
+            "It's built from risky assets.",
+            "One loan gives no diversification."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "mpt_portfolio_6",
+          "difficulty": 2,
+          "prompt": "Portfolios A and B have the same expected return, but A has higher risk. Which statement is correct?",
+          "options": [
+            "B is efficient (on the frontier); A is inefficient",
+            "A is efficient because it's riskier",
+            "Both are efficient",
+            "Neither can be compared"
+          ],
+          "answer": 0,
+          "explanation": "For the same return, the lower-risk portfolio dominates; efficient portfolios lie on the upper half of the curve.",
+          "feedback": [
+            null,
+            "Extra risk without extra return is inefficient.",
+            "Only the lower-risk one is efficient.",
+            "Same return makes them directly comparable."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 15
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 16
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "mpt_portfolio_7",
+          "difficulty": 2,
+          "prompt": "Bank of USYD holds two loans: X = 0.55 and 0.45, returns 8% and 10%. What is the portfolio's expected return?",
+          "options": [
+            "8.9%",
+            "9.0%",
+            "18%",
+            "8.0%"
+          ],
+          "answer": 0,
+          "explanation": "0.55 × 8% + 0.45 × 10% = 4.4% + 4.5% = 8.9%.",
+          "feedback": [
+            null,
+            "That's a simple average; use the weights.",
+            "That adds the returns.",
+            "That's loan 1 only."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 18
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 19
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "mpt_portfolio_8",
+          "difficulty": 2,
+          "prompt": "If two loans' default risks were perfectly correlated (ρ = 1), what would the portfolio's standard deviation equal?",
+          "options": [
+            "The weighted average of the two loans' standard deviations: no diversification benefit",
+            "Zero",
+            "Less than either loan's standard deviation",
+            "The sum of the two standard deviations"
+          ],
+          "answer": 0,
+          "explanation": "With ρ = 1 the variance becomes (X₁σ₁ + X₂σ₂)², so σp = X₁σ₁ + X₂σ₂.",
+          "feedback": [
+            null,
+            "Zero risk would need perfect negative correlation and the right weights.",
+            "That needs ρ < 1.",
+            "The weights still apply."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 13
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "mpt_portfolio_9",
+          "difficulty": 3,
+          "prompt": "Bank of USYD: X = 0.55/0.45, σ = 8.55%/9.15%, ρ₁₂ = 0.24. What is the portfolio's standard deviation?",
+          "options": [
+            "6.95%",
+            "8.82%",
+            "6.25%",
+            "0.48%"
+          ],
+          "answer": 0,
+          "explanation": "σp² = 0.55²(0.0855)² + 0.45²(0.0915)² + 2(0.55)(0.45)(0.24)(0.0855)(0.0915) = 0.004836, so σp = 6.95%.",
+          "feedback": [
+            null,
+            "That's the weighted average of σ, which assumes ρ = 1.",
+            "That leaves out the covariance term (ρ = 0).",
+            "That's the variance, not its square root."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 18
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 19
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "kmv_model",
+      "name": "Moody's KMV Portfolio Manager model",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Builds MPT inputs for non-traded loans: Rᵢ = AISᵢ − EDFᵢ × LGDᵢ; σᵢ = √(EDFᵢ(1 − EDFᵢ)) × LGDᵢ (unexpected loss); ρᵢⱼ from the correlation of borrowers' asset returns (industry, geography, time).",
+      "misconceptions": [
+        "Thinking AIS affects a loan's risk",
+        "Forgetting the square root in σᵢ"
+      ],
+      "questions": [
+        {
+          "id": "kmv_model_1",
+          "difficulty": 1,
+          "prompt": "Why does the KMV model need special estimates for MPT's inputs on loans?",
+          "options": [
+            "Loans don't trade, so there's no price history to estimate their return, risk and correlation",
+            "Loans are too small to matter",
+            "Loans have no default risk",
+            "MPT can only be used for shares by law"
+          ],
+          "answer": 0,
+          "explanation": "KMV builds return, risk and correlation from what the bank knows: spread, default probability and likely loss.",
+          "feedback": [
+            null,
+            "Size isn't the issue.",
+            "Default risk is exactly what it models.",
+            "MPT applies to any portfolio."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "kmv_model_2",
+          "difficulty": 1,
+          "prompt": "In this equation, what is AIS?",
+          "options": [
+            "The all-in spread: annual fees + (loan rate − the bank's funding cost)",
+            "The expected default frequency",
+            "The loss given default",
+            "The expected loss"
+          ],
+          "answer": 0,
+          "explanation": "AIS is what the bank earns above its own cost of funds if the borrower repays.",
+          "feedback": [
+            null,
+            "That's EDF.",
+            "That's LGD.",
+            "That's EDF × LGD."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 21
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 22
+            }
+          ],
+          "type": "equation",
+          "subtype": "variables",
+          "equation": "R_i = AIS_i(1 - EDF_i) + (AIS_i - LGD_i)\\,EDF_i = AIS_i - EDF_i \\times LGD_i",
+          "changes": 1
+        },
+        {
+          "id": "kmv_model_3",
+          "difficulty": 1,
+          "prompt": "LGD doubles and EDF is unchanged. What happens to the loan's risk σᵢ?",
+          "options": [
+            "Doubles",
+            "Quadruples",
+            "Halves",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "σᵢ is proportional to LGD.",
+          "feedback": [
+            null,
+            "LGD isn't squared here.",
+            "A bigger LGD means more risk.",
+            "σᵢ depends on LGD."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 22
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "\\sigma_i = \\sqrt{EDF_i(1 - EDF_i)} \\times LGD_i",
+          "changes": 1
+        },
+        {
+          "id": "kmv_model_4",
+          "difficulty": 1,
+          "prompt": "A loan's AIS rises (higher fees), with EDF and LGD unchanged. What happens to its risk σᵢ?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 2,
+          "explanation": "AIS shifts both outcomes (repaid and defaulted) up equally, so the spread between them doesn't change. AIS only raises Rᵢ.",
+          "feedback": [
+            "AIS isn't in the σᵢ formula.",
+            "AIS isn't in the σᵢ formula.",
+            null
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 22
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "AIS ↑",
+            "to": "σᵢ unchanged (Rᵢ ↑)",
+            "steps": 1
+          },
+          "concepts": [
+            "kmv_model",
+            "raroc"
+          ]
+        },
+        {
+          "id": "kmv_model_5",
+          "difficulty": 2,
+          "prompt": "SydneySide Bank: a loan earns 2% fees and a 4% spread over its cost of funds; LGD is 20% and EDF is 3%. What is the expected return Rᵢ?",
+          "options": [
+            "5.4%",
+            "6.0%",
+            "3.0%",
+            "0.6%"
+          ],
+          "answer": 0,
+          "explanation": "Rᵢ = AIS − EDF × LGD = (0.02 + 0.04) − (0.03 × 0.20) = 0.06 − 0.006 = 5.4%.",
+          "feedback": [
+            null,
+            "That's AIS; subtract the expected loss.",
+            "That subtracts EDF alone instead of EDF × LGD.",
+            "That's the expected loss."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 23
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 24
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "kmv_model_6",
+          "difficulty": 2,
+          "prompt": "Same SydneySide loan (EDF 3%, LGD 20%). What is its risk σᵢ?",
+          "options": [
+            "3.41%",
+            "17.06%",
+            "0.58%",
+            "0.60%"
+          ],
+          "answer": 0,
+          "explanation": "σᵢ = √(0.03 × 0.97) × 0.20 = 0.1706 × 0.20 = 3.41%.",
+          "feedback": [
+            null,
+            "That forgets to multiply by LGD.",
+            "That forgets the square root.",
+            "That's the expected loss, not the unexpected loss."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 24
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "kmv_model_7",
+          "difficulty": 2,
+          "prompt": "A loan's EDF rises from 3% to 6% (still well below 50%). What happens to its risk σᵢ?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "EDF(1 − EDF) rises towards its peak at EDF = 50%, so the outcome becomes less predictable and σᵢ rises.",
+          "feedback": [
+            null,
+            "Below 50%, a higher EDF raises EDF(1 − EDF).",
+            "σᵢ depends on EDF."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 22
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "EDF ↑ (below 50%)",
+            "to": "σᵢ ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "kmv_model",
+            "cr_basics"
+          ]
+        },
+        {
+          "id": "kmv_model_8",
+          "difficulty": 3,
+          "prompt": "Two loans: loan 1 is 60% of the portfolio with R₁ = 6.25%; loan 2 is 40% with R₂ = 5.60%. What is the portfolio return?",
+          "options": [
+            "5.99%",
+            "5.93%",
+            "6.60%",
+            "6.25%"
+          ],
+          "answer": 0,
+          "explanation": "Rp = 0.6 × 6.25% + 0.4 × 5.60% = 3.75% + 2.24% = 5.99%.",
+          "feedback": [
+            null,
+            "That's a simple average; use the weights.",
+            "That's the weighted AIS, before expected losses.",
+            "That's loan 1 alone."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 25
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 26
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 27
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "kmv_model_9",
+          "difficulty": 3,
+          "prompt": "Same two loans: σ₁ = 4.265%, σ₂ = 2.80%, weights 0.6/0.4, ρ₁₂ = −0.25. What is the portfolio's risk σp?",
+          "options": [
+            "2.52%",
+            "3.04%",
+            "3.68%",
+            "0.064%"
+          ],
+          "answer": 0,
+          "explanation": "σp² = 0.6²(0.04265)² + 0.4²(0.028)² + 2(0.6)(0.4)(−0.25)(0.04265)(0.028) = 0.000637, so σp = 2.52%, lower than either loan alone.",
+          "feedback": [
+            null,
+            "That uses ρ = +0.25: the sign matters.",
+            "That's the weighted average of σ (ρ = 1).",
+            "That's the variance, not σ."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 27
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "kmv_model_10",
+          "difficulty": 3,
+          "prompt": "Why is the risk of the two-loan portfolio (2.52%) lower than the risk of either loan on its own?",
+          "options": [
+            "The loans' defaults are negatively correlated, so the covariance term is negative and subtracts from portfolio variance",
+            "Because the portfolio's expected return is lower",
+            "Because LGD falls when loans are combined",
+            "Because the weights add up to one"
+          ],
+          "answer": 0,
+          "explanation": "ρ < 0 → covariance term negative → σp² falls below the weighted individual variances → σp < each σᵢ.",
+          "feedback": [
+            null,
+            "Return doesn't determine risk here.",
+            "Each loan keeps its LGD.",
+            "Weights always sum to one; that alone doesn't cut risk."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 13
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 27
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "ρ₁₂ < 0",
+            "to": "Covariance term < 0 → σp ↓",
+            "steps": 2
+          },
+          "concepts": [
+            "kmv_model",
+            "mpt_portfolio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loan_volume_model",
+      "name": "Loan volume model",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "A partial application of MPT: compare the bank's loan mix with a national benchmark. σⱼ = √(Σ(Xᵢⱼ − Xᵢ)² ÷ N); the bigger the deviation, the more concentrated the bank relative to the benchmark.",
+      "misconceptions": [
+        "Thinking a single σⱼ tells you whether the bank is unusually concentrated without comparing peers"
+      ],
+      "questions": [
+        {
+          "id": "loan_volume_model_1",
+          "difficulty": 1,
+          "prompt": "How does the loan volume model measure concentration?",
+          "options": [
+            "By comparing the bank's loan allocation with a national benchmark: bigger deviations mean more concentration",
+            "By regressing sector losses on total loan losses",
+            "By estimating each borrower's EDF",
+            "By counting the number of borrowers"
+          ],
+          "answer": 0,
+          "explanation": "It's a partial application of MPT that only needs loan shares by category.",
+          "feedback": [
+            null,
+            "That's the loan loss ratio model.",
+            "That's KMV.",
+            "The number of borrowers isn't the measure."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 28
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_volume_model_2",
+          "difficulty": 1,
+          "prompt": "A bank shifts its loan mix closer to the national benchmark. What happens to σⱼ?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Smaller gaps (Xᵢⱼ − Xᵢ) mean a smaller σⱼ.",
+          "feedback": [
+            "Moving towards the benchmark shrinks the gaps.",
+            null,
+            "σⱼ is built from the gaps."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 29
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "\\sigma_j = \\sqrt{\\frac{\\sum_{i=1}^{N}(X_{ij} - X_i)^2}{N}}",
+          "changes": 1
+        },
+        {
+          "id": "loan_volume_model_3",
+          "difficulty": 1,
+          "prompt": "Which source can be aggregated to estimate national loan allocations?",
+          "options": [
+            "Commercial bank call reports",
+            "Credit default swap prices",
+            "Altman Z-scores",
+            "The bank's own deposit records"
+          ],
+          "answer": 0,
+          "explanation": "Benchmark data: call reports, shared national credits (C&I loans by 2-digit SIC code) and commercial databases.",
+          "feedback": [
+            null,
+            "Not a source of loan allocations.",
+            "That's a scoring model.",
+            "One bank's data can't give a national mix."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 30
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_volume_model_4",
+          "difficulty": 2,
+          "prompt": "National mortgage banks hold 60% residential, 15% commercial, 5% international and 20% MBS. A local bank holds 50/30/20/0. What is its σ from the benchmark?",
+          "options": [
+            "15.41%",
+            "9.50%",
+            "2.38%",
+            "30.82%"
+          ],
+          "answer": 0,
+          "explanation": "Squared gaps: 0.0100 + 0.0225 + 0.0225 + 0.0400 = 0.0950; ÷ 4 = 0.02375; √ = 15.41%.",
+          "feedback": [
+            null,
+            "That's the sum of squared gaps before dividing by N and taking the root.",
+            "That's the variance (no square root).",
+            "That's √0.095: you forgot to divide by N."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 31
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_volume_model_5",
+          "difficulty": 2,
+          "prompt": "Using the national benchmark, Bank A's σ is 11.73% and Bank B's is 26.69%. What can you conclude?",
+          "options": [
+            "Bank B deviates more from the national mix, mainly through its heavy concentration in loans to individuals",
+            "Bank A is more concentrated",
+            "Bank B must have a higher default rate",
+            "They can't be compared"
+          ],
+          "answer": 0,
+          "explanation": "Bank B: 55% individuals vs 15% nationally, and 10% real estate vs 45%. Ranking two banks gives σ meaning.",
+          "feedback": [
+            null,
+            "A lower σ means closer to the benchmark.",
+            "The model measures concentration, not default rates.",
+            "Both use the same benchmark, so they can be ranked."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 32
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 33
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 34
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_volume_model_6",
+          "difficulty": 3,
+          "prompt": "The national mix is 50% real estate, 30% C&I and 20% individuals (3 categories). A bank holds 70/20/10. What is its σ?",
+          "options": [
+            "14.14%",
+            "8.16%",
+            "2.00%",
+            "24.49%"
+          ],
+          "answer": 0,
+          "explanation": "Squared gaps 0.04 + 0.01 + 0.01 = 0.06; ÷ 3 = 0.02; √0.02 = 14.14%.",
+          "feedback": [
+            null,
+            "That takes the root before dividing: √0.06 ÷ 3.",
+            "That's the variance.",
+            "That's √0.06: divide by N first."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 29
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "loan_loss_ratio",
+      "name": "Loan loss ratio model",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Based on CAPM: regress a sector's quarterly loss rate on the total loan loss rate. α is the sector loss rate with no sensitivity to the portfolio; βᵢ is the sector's systematic loss sensitivity. βᵢ > 1 means riskier.",
+      "misconceptions": [
+        "Reading α as the sensitivity"
+      ],
+      "questions": [
+        {
+          "id": "loan_loss_ratio_1",
+          "difficulty": 1,
+          "prompt": "Which idea is the loan loss ratio model borrowed from?",
+          "options": [
+            "CAPM: a sector's risk is its systematic loss sensitivity to losses on the whole loan book",
+            "Altman's Z-score",
+            "The duration model",
+            "The sovereign ceiling"
+          ],
+          "answer": 0,
+          "explanation": "It works like a share's beta, but for loan losses instead of returns.",
+          "feedback": [
+            null,
+            "Altman's Z classifies borrowers.",
+            "Duration is about rate sensitivity.",
+            "That's sovereign risk."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 35
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_loss_ratio_2",
+          "difficulty": 1,
+          "prompt": "In this regression, what does βᵢ measure?",
+          "options": [
+            "The systematic loss sensitivity of sector i's loans to losses on total loans",
+            "The sector's loss rate when it has no sensitivity to portfolio losses",
+            "The share of loans in sector i",
+            "The recovery rate"
+          ],
+          "answer": 0,
+          "explanation": "βᵢ > 1: sector losses move more than the portfolio's.",
+          "feedback": [
+            null,
+            "That's α.",
+            "That's a weight, not a sensitivity.",
+            "Recovery isn't in this model."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 35
+            }
+          ],
+          "type": "equation",
+          "subtype": "variables",
+          "equation": "\\frac{\\text{Sectoral losses in sector } i}{\\text{Loans to sector } i} = \\alpha + \\beta_i \\left(\\frac{\\text{Total loan losses}}{\\text{Total loans}}\\right)",
+          "changes": 1
+        },
+        {
+          "id": "loan_loss_ratio_3",
+          "difficulty": 2,
+          "prompt": "A sector's βᵢ is estimated at 1.4. What should the bank conclude?",
+          "options": [
+            "Sector losses rise faster than portfolio losses, so it's riskier and the bank should have less appetite to concentrate there",
+            "The sector is less sensitive than average",
+            "The sector has a 1.4% loss rate",
+            "The sector should get a higher concentration limit"
+          ],
+          "answer": 0,
+          "explanation": "β above 1 means above-average systematic loss sensitivity.",
+          "feedback": [
+            null,
+            "That's β < 1.",
+            "β is a sensitivity, not a loss rate.",
+            "Higher β argues for a lower limit."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 35
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "loan_loss_ratio_4",
+          "difficulty": 1,
+          "prompt": "A sector's estimated β rises above 1. What happens to the bank's appetite to concentrate lending there?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Higher systematic loss sensitivity makes the sector riskier, so the bank should lend less there.",
+          "feedback": [
+            "A higher β means more risk.",
+            null,
+            "β is exactly what this model uses to judge sectors."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 35
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "βᵢ ↑ (> 1)",
+            "to": "Appetite to concentrate ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "loan_loss_ratio",
+            "concentration_limits"
+          ]
+        },
+        {
+          "id": "loan_loss_ratio_5",
+          "difficulty": 3,
+          "prompt": "Sector A has β = 0.8 and sector B has β = 1.5 (α = 0 for both). The total loan loss rate rises by 1 percentage point. What happens to each sector's loss rate?",
+          "options": [
+            "A rises 0.8 points and B rises 1.5 points, so B's losses grow almost twice as fast",
+            "Both rise 1 point",
+            "A rises 1.5 points and B 0.8 points",
+            "Neither changes, because α = 0"
+          ],
+          "answer": 0,
+          "explanation": "Change in sector loss rate = βᵢ × change in total loss rate: 0.8 × 1 and 1.5 × 1.",
+          "feedback": [
+            null,
+            "That ignores β.",
+            "That swaps the betas.",
+            "α is the intercept; β drives the change."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 35
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "credit_portfolio_models",
+      "name": "Regulatory credit portfolio models",
+      "week": 7,
+      "prerequisites": [],
+      "definition": "Concentration limits were criticised as arbitrary; Basel II brought quantitative models: Moody's KMV (MPT), CreditMetrics (mark-to-market, VaR) and Credit Risk+ (default paradigm, expected losses and their distribution). The BIS sees benefits but warns that credit correlations are hard to estimate.",
+      "misconceptions": [
+        "Mixing up CreditMetrics (mark-to-market) and Credit Risk+ (default mode)"
+      ],
+      "questions": [
+        {
+          "id": "credit_portfolio_models_1",
+          "difficulty": 1,
+          "prompt": "Which model uses a mark-to-market paradigm and estimates VaR on loans and loan portfolios?",
+          "options": [
+            "CreditMetrics (JP Morgan)",
+            "Credit Risk+ (CSFP)",
+            "Moody's KMV",
+            "Altman's Z-score"
+          ],
+          "answer": 0,
+          "explanation": "Mark-to-market: any change in a loan's value (upgrade, downgrade or default) counts, using rating transition matrices.",
+          "feedback": [
+            null,
+            "Credit Risk+ uses a default paradigm.",
+            "KMV applies MPT to loans.",
+            "Altman's Z is a scoring model."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_portfolio_models_2",
+          "difficulty": 1,
+          "prompt": "Credit Risk+ (CSFP) follows which paradigm?",
+          "options": [
+            "Default paradigm: estimate expected default losses and their distribution to set the capital needed",
+            "Mark-to-market paradigm",
+            "Modern portfolio theory",
+            "Market-based spreads"
+          ],
+          "answer": 0,
+          "explanation": "Like an insurer working out claim rates from historical default rates.",
+          "feedback": [
+            null,
+            "That's CreditMetrics.",
+            "That's KMV.",
+            "That's the term-structure approach from Week 5."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_portfolio_models_3",
+          "difficulty": 1,
+          "prompt": "Why did regulators move from concentration limits towards quantitative credit models?",
+          "options": [
+            "Concentration limits were criticised for being arbitrary; Basel II led to greater reliance on models",
+            "Models remove the need for capital",
+            "Limits were too expensive to monitor",
+            "Models were required by deposit insurers"
+          ],
+          "answer": 0,
+          "explanation": "Since the mid-2000s Basel II encouraged KMV, CreditMetrics and Credit Risk+.",
+          "feedback": [
+            null,
+            "Models help allocate capital; they don't remove it.",
+            "Cost isn't the reason given.",
+            "Not the reason given."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_portfolio_models_4",
+          "difficulty": 2,
+          "prompt": "According to the BIS, what is the main caveat to credit models reflecting risk concentration?",
+          "options": [
+            "Credit correlations are extremely difficult to calculate and not well understood (e.g. sub-prime)",
+            "They require too much capital",
+            "They can't be used for pricing",
+            "They ignore individual loans"
+          ],
+          "answer": 0,
+          "explanation": "If correlations are well understood, VaR gives one aggregate figure; sub-prime showed they weren't.",
+          "feedback": [
+            null,
+            "Not the caveat.",
+            "Better pricing of risk is listed as a benefit.",
+            "Not the caveat."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 37
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_portfolio_models_5",
+          "difficulty": 2,
+          "prompt": "Which of these is NOT a benefit of credit models listed by the BIS?",
+          "options": [
+            "Removing the need to hold economic capital",
+            "Providing timely data",
+            "Assisting in better pricing of risk",
+            "A formal framework for allocating economic capital"
+          ],
+          "answer": 0,
+          "explanation": "Models help allocate capital; they don't remove the need for it.",
+          "feedback": [
+            null,
+            "That's listed.",
+            "That's listed.",
+            "That's listed."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 37
+            },
+            {
+              "doc": "week07_lecture",
+              "page": 38
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "credit_portfolio_models_6",
+          "difficulty": 3,
+          "prompt": "A bank's model assumes mortgage defaults are far less correlated than they really are (as in sub-prime). What happens?",
+          "options": [
+            "Portfolio risk and VaR are understated, so the bank holds too little capital and losses can exceed it",
+            "Portfolio risk is overstated, so the bank holds too much capital",
+            "Expected return is understated",
+            "Nothing, because correlation only affects return"
+          ],
+          "answer": 0,
+          "explanation": "ρ too low → covariance terms too small → σp and VaR understated → capital too low → real losses overwhelm it.",
+          "feedback": [
+            null,
+            "Underestimating ρ makes risk look smaller, not larger.",
+            "Correlation affects risk, not expected return.",
+            "Correlation drives portfolio risk."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 37
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Correlation underestimated",
+            "to": "VaR understated → capital too low",
+            "steps": 2
+          },
+          "concepts": [
+            "credit_portfolio_models",
+            "mpt_portfolio"
+          ]
+        },
+        {
+          "id": "credit_portfolio_models_7",
+          "difficulty": 3,
+          "prompt": "A bank wants to measure how much a loan's value falls if the borrower is downgraded from A to BBB, even without a default. Which model fits?",
+          "options": [
+            "CreditMetrics: its mark-to-market paradigm values upgrades and downgrades, not just defaults",
+            "Credit Risk+, because it models defaults",
+            "The loan volume model",
+            "Concentration limits"
+          ],
+          "answer": 0,
+          "explanation": "Credit Risk+ only counts losses from default; CreditMetrics revalues the loan for any rating migration.",
+          "feedback": [
+            null,
+            "A default paradigm ignores downgrades without default.",
+            "That measures concentration against a benchmark.",
+            "Limits cap exposure; they don't value loans."
+          ],
+          "sources": [
+            {
+              "doc": "week07_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    }
+  ]
+}
