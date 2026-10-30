@@ -1,0 +1,1108 @@
+{
+  "unit": "BANK3011",
+  "week": 9,
+  "title": "Deposit Insurance",
+  "source": "Lecture 10 · Deposit Insurance",
+  "concepts": [
+    {
+      "id": "liquid_asset_liability_mgmt",
+      "name": "Liquid asset and liability management",
+      "week": 9,
+      "prerequisites": [],
+      "definition": "Liquidity and return are inversely related: liquid assets earn less, and callable liabilities cost less but carry more withdrawal risk. A DI balances low-yield liquid assets against higher-yield illiquid assets, and low-cost, high-withdrawal-risk liabilities against costlier stable funding.",
+      "misconceptions": [
+        "Thinking demand deposits are free to a bank"
+      ],
+      "questions": [
+        {
+          "id": "liquid_asset_liability_mgmt_1",
+          "difficulty": 1,
+          "prompt": "Why is managing liquidity difficult for a bank?",
+          "options": [
+            "Liquidity and return are inversely related: liquid assets earn less, and callable liabilities are cheaper but riskier",
+            "Liquid assets always earn the highest returns",
+            "Stable liabilities are the cheapest funding",
+            "Liquidity has no effect on profit"
+          ],
+          "answer": 0,
+          "explanation": "More liquid assets have lower returns; more callable liabilities have lower costs but higher withdrawal risk.",
+          "feedback": [
+            null,
+            "Liquid assets earn less.",
+            "Stable liabilities cost more.",
+            "Holding liquidity costs earnings."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_2",
+          "difficulty": 1,
+          "prompt": "What makes an asset liquid, according to the lecture?",
+          "options": [
+            "It trades in a deep market where even large volumes don't move the price",
+            "It has a long maturity",
+            "It pays a high interest rate",
+            "It's held to maturity"
+          ],
+          "answer": 0,
+          "explanation": "Treasury notes and bonds are examples; the trade-off is a lower interest rate.",
+          "feedback": [
+            null,
+            "Long maturity usually means less liquid.",
+            "Liquid securities pay comparatively less.",
+            "Not the definition."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 4
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_3",
+          "difficulty": 1,
+          "prompt": "What are the characteristics of demand deposits as a funding source?",
+          "options": [
+            "High withdrawal risk and low cost",
+            "Low withdrawal risk and high cost",
+            "No withdrawal risk",
+            "The most expensive funding a bank has"
+          ],
+          "answer": 0,
+          "explanation": "Cheap but callable. Even with zero explicit interest they aren't free: banks bear processing costs.",
+          "feedback": [
+            null,
+            "That's stable funding like term deposits.",
+            "They can be withdrawn on demand.",
+            "They're among the cheapest."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_4",
+          "difficulty": 1,
+          "prompt": "Interest rates on purchased funds in the short-term money market rise. What happens to a DI's desired liquid asset ratio?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Borrowing to cover liquidity needs becomes costlier, so holding more liquid assets becomes relatively attractive.",
+          "feedback": [
+            null,
+            "Costlier borrowing makes stored liquidity more attractive, not less.",
+            "The lecture lists this as a determinant."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 6
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Money market rates ↑",
+            "to": "Desired liquid asset ratio ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "liquid_asset_liability_mgmt",
+            "purchased_stored_liquidity"
+          ]
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_5",
+          "difficulty": 2,
+          "prompt": "Why are repos usually a cheaper source of funds than interbank loans?",
+          "options": [
+            "Repos are collateralised, so lenders accept a lower yield",
+            "Repos are longer-term",
+            "Repos are government guaranteed",
+            "Repos have no rollover risk at all"
+          ],
+          "answer": 0,
+          "explanation": "Interbank funds are unsecured and face rollover risk when lenders pull back.",
+          "feedback": [
+            null,
+            "They're typically short-term.",
+            "The collateral, not a guarantee, makes them cheaper.",
+            "They're short-term and must be rolled over."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 15
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_6",
+          "difficulty": 2,
+          "prompt": "Which is NOT a determinant of a DI's optimal liquid asset ratio listed in the lecture?",
+          "options": [
+            "The size of the bank's branch network",
+            "The variability of deposit inflows and outflows",
+            "The yield on non-liquid assets",
+            "The liquidation costs of highly non-liquid assets"
+          ],
+          "answer": 0,
+          "explanation": "The lecture also lists the interest rate on purchased funds or RBA liquidity facilities.",
+          "feedback": [
+            null,
+            "Listed.",
+            "Listed.",
+            "Listed."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_7",
+          "difficulty": 2,
+          "prompt": "The RBA does a buy-side repo with Bank A, crediting its Exchange Settlement account with $80m. What happens to the cash rate?",
+          "options": [
+            "It tends to fall: more ES balances means banks need to borrow less overnight",
+            "It rises, because liquidity is drained",
+            "No effect: repos don't affect ES balances",
+            "It rises to the repo rate automatically"
+          ],
+          "answer": 0,
+          "explanation": "The RBA manages ES supply to keep the cash rate near its target.",
+          "feedback": [
+            null,
+            "Buying bonds adds liquidity.",
+            "The ES account is credited.",
+            "Not the mechanism."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 8
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_8",
+          "difficulty": 3,
+          "prompt": "The RBA does a 7-day repo with Bank A for $80m at 3.00% p.a. (actual/365). What does Bank A pay to unwind it?",
+          "options": [
+            "$80,046,027.40",
+            "$82,400,000.00",
+            "$80,240,000.00",
+            "$80,006,575.34"
+          ],
+          "answer": 0,
+          "explanation": "Repurchase price = 80,000,000 × (1 + 0.03 × 7/365) = $80,046,027.40.",
+          "feedback": [
+            null,
+            "That's a full year's interest.",
+            "That uses 7/70 of a year.",
+            "That uses 1 day instead of 7."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_9",
+          "difficulty": 3,
+          "prompt": "A 14-day repo for $50m at 2.50% p.a. (actual/365). What's the repurchase price?",
+          "options": [
+            "$50,047,945.21",
+            "$51,250,000.00",
+            "$50,003,424.66",
+            "$50,095,890.41"
+          ],
+          "answer": 0,
+          "explanation": "50,000,000 × (1 + 0.025 × 14/365) = $50,047,945.21.",
+          "feedback": [
+            null,
+            "That's a full year's interest.",
+            "That's one day's interest.",
+            "That doubles the interest."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "liquid_asset_liability_mgmt_10",
+          "difficulty": 3,
+          "prompt": "A depositor keeps $1,000 for six months and below $500 for the rest of the year. The account pays 4% p.a. on balances of $500 or more. They make 40 transactions a month, paying 5 cents each, which cost the bank 20 cents each. What is their gross interest return?",
+          "options": [
+            "$92",
+            "$20",
+            "$72",
+            "$116"
+          ],
+          "answer": 0,
+          "explanation": "Explicit: 1,000 × 0.04 × 0.5 = $20. Implicit: (0.20 − 0.05) × 40 × 12 = $72. Total $92.",
+          "feedback": [
+            null,
+            "That's explicit interest only.",
+            "That's implicit interest only.",
+            "That uses the full 20-cent cost without netting the fee."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 13
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "deposit_insurance_runs",
+      "name": "Deposit insurance, bank runs and moral hazard",
+      "week": 9,
+      "prerequisites": [],
+      "definition": "First-come, first-served deposits give depositors a reason to run, which can push a sound DI into failure. Deposit insurance (e.g. FDIC, up to $250,000 per depositor, per bank, per ownership category) removes the incentive to run, but flat premiums create moral hazard and reduce market discipline.",
+      "misconceptions": [
+        "Thinking deposit insurance has no downside"
+      ],
+      "questions": [
+        {
+          "id": "deposit_insurance_runs_1",
+          "difficulty": 1,
+          "prompt": "Why does deposit insurance stop bank runs?",
+          "options": [
+            "If depositors believe their claim is completely secure, they have no incentive to run even if the bank is in trouble",
+            "It makes banks hold more cash",
+            "It bans withdrawals during a crisis",
+            "It lowers interest rates"
+          ],
+          "answer": 0,
+          "explanation": "The run incentive comes from first-come, first-served payment; insurance removes the fear of being last in line.",
+          "feedback": [
+            null,
+            "Not the mechanism.",
+            "Withdrawals aren't banned.",
+            "Not related."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 20
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 22
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "deposit_insurance_runs_2",
+          "difficulty": 1,
+          "prompt": "Up to what amount does FDIC insurance cover depositors?",
+          "options": [
+            "At least $250,000 per depositor, per insured bank, per ownership category",
+            "$100,000 per bank in total",
+            "Unlimited amounts",
+            "$1 million per depositor"
+          ],
+          "answer": 0,
+          "explanation": "It covers principal plus accrued interest up to the date of default.",
+          "feedback": [
+            null,
+            "The cap is per depositor.",
+            "There's a cap.",
+            "That was Australia's original FCS cap."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 22
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "deposit_insurance_runs_3",
+          "difficulty": 1,
+          "prompt": "What is the moral hazard problem with deposit insurance?",
+          "options": [
+            "Insured depositors stop monitoring banks and flat premiums don't charge for risk, so banks are encouraged to take more risk",
+            "Depositors run more often",
+            "Banks hold too much capital",
+            "Insurance makes deposits more expensive for depositors"
+          ],
+          "answer": 0,
+          "explanation": "The lecture describes a trade-off between bank run risk and moral hazard risk.",
+          "feedback": [
+            null,
+            "Insurance reduces runs.",
+            "The opposite tends to happen.",
+            "Not the problem."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 25
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 26
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "deposit_insurance_runs_4",
+          "difficulty": 1,
+          "prompt": "Deposit insurance premiums are flat, not linked to risk. What happens to banks' incentive to take risky investments?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Risky banks pay the same as safe ones, so the cost of extra risk isn't charged: risk-taking rises.",
+          "feedback": [
+            null,
+            "Flat premiums don't penalise risk.",
+            "Premium design affects incentives."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 26
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Premiums not risk-based",
+            "to": "Risk-taking ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "deposit_insurance_runs",
+            "bank_runs"
+          ]
+        },
+        {
+          "id": "deposit_insurance_runs_5",
+          "difficulty": 2,
+          "prompt": "Apart from economic conditions, what's the second 'school of thought' on why the FDIC became insolvent at times?",
+          "options": [
+            "Moral hazard: insurance reduced market discipline and premiums weren't linked to risk",
+            "Too many depositors",
+            "Interest rates were too low",
+            "Banks held too many Treasury securities"
+          ],
+          "answer": 0,
+          "explanation": "The first school blames the environment (rate rises, collapsing oil, real estate and commodity prices; the housing collapse).",
+          "feedback": [
+            null,
+            "Not the explanation.",
+            "Rate rises were part of the first school.",
+            "Not the explanation."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 24
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 25
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "deposit_insurance_runs_6",
+          "difficulty": 2,
+          "prompt": "What does the FDIC chart of bank failures show?",
+          "options": [
+            "Failures spike in crises: the 1930s, the late 1980s and around 2008–2010",
+            "Failures rise steadily every year",
+            "Failures have never exceeded 50 in a year",
+            "Failures stopped after 1933"
+          ],
+          "answer": 0,
+          "explanation": "The late-1980s savings and loan crisis peaked near 280 failures a year.",
+          "feedback": [
+            null,
+            "They cluster in crises.",
+            "The late-1980s peak was much higher.",
+            "They continued in later crises."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 23
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "deposit_insurance_runs_7",
+          "difficulty": 3,
+          "prompt": "A sound bank faces a large, unexpected depositor drain with no deposit insurance. Trace what can happen.",
+          "options": [
+            "Depositors queue because pay-outs are first come, first served; the bank fire-sells assets; losses can push it into insolvency",
+            "The bank simply borrows from depositors",
+            "Nothing, because sound banks can't fail",
+            "The regulator guarantees all deposits automatically"
+          ],
+          "answer": 0,
+          "explanation": "The incentive to run first creates instability that deposit insurance is designed to remove.",
+          "feedback": [
+            null,
+            "Not how it works.",
+            "Sound banks can be pushed into failure.",
+            "Without insurance there's no guarantee."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 20
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 21
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Unexpected drain, no insurance",
+            "to": "Run → fire sales → insolvency",
+            "steps": 3
+          },
+          "concepts": [
+            "deposit_insurance_runs",
+            "bank_runs"
+          ]
+        },
+        {
+          "id": "deposit_insurance_runs_8",
+          "difficulty": 3,
+          "prompt": "Under the 1997 FDIC fee structure, which bank paid nothing for deposit insurance?",
+          "options": [
+            "A well-capitalised bank in the healthy supervisory group",
+            "An undercapitalised bank of substantial supervisory concern",
+            "Every bank paid 23 cents per $100",
+            "An adequately capitalised bank of supervisory concern"
+          ],
+          "answer": 0,
+          "explanation": "Well-capitalised and healthy paid 0 cents per $100; undercapitalised with substantial concern paid 27 cents.",
+          "feedback": [
+            null,
+            "That bank paid the most (27 cents).",
+            "That was the 1993 flat-ish starting point.",
+            "That bank paid 10 cents per $100."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 30
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "controlling_di_risk",
+      "name": "Controlling DI risk taking",
+      "week": 9,
+      "prerequisites": [],
+      "definition": "Moral hazard can be reduced through stockholder discipline (risk-based premiums, higher capital, stricter closure rules), depositor discipline (insurance caps, insured depositor transfers) and regulator discipline (more thorough examinations, prompt corrective action).",
+      "misconceptions": [
+        "Thinking an insurance cap can't be bypassed"
+      ],
+      "questions": [
+        {
+          "id": "controlling_di_risk_1",
+          "difficulty": 1,
+          "prompt": "Which three types of discipline can mitigate deposit insurance moral hazard?",
+          "options": [
+            "Stockholder, depositor and regulator discipline",
+            "Borrower, lender and auditor discipline",
+            "Central bank, treasury and court discipline",
+            "Price, quantity and time discipline"
+          ],
+          "answer": 0,
+          "explanation": "The lecture works through each in turn.",
+          "feedback": [
+            null,
+            "Not the three.",
+            "Not the three.",
+            "Not the three."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 27
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_2",
+          "difficulty": 1,
+          "prompt": "In the risk-based premium chart, Bank A is riskier than Bank B. What changes when premiums switch from flat to risk-based?",
+          "options": [
+            "Bank A pays more and Bank B pays less than the flat $0.23 per $100",
+            "Both pay the same",
+            "Bank B pays more",
+            "Neither pays anything"
+          ],
+          "answer": 0,
+          "explanation": "A risk-based schedule rises with risk, so the risky bank pays more.",
+          "feedback": [
+            null,
+            "That's the flat schedule.",
+            "B is safer, so it pays less.",
+            "Premiums are still charged."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 28
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_3",
+          "difficulty": 1,
+          "prompt": "What does an 'insured depositor transfer' do when a DI fails?",
+          "options": [
+            "Moves insured deposits in full to another DI while uninsured depositors take a haircut",
+            "Pays all depositors in full",
+            "Transfers the bank's shares to depositors",
+            "Moves loans to the regulator"
+          ],
+          "answer": 0,
+          "explanation": "The haircut gives uninsured depositors a reason to monitor the bank.",
+          "feedback": [
+            null,
+            "Uninsured depositors lose.",
+            "Not what it does.",
+            "Not what it does."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 33
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_4",
+          "difficulty": 1,
+          "prompt": "Regulators raise capital requirements. What happens to stockholders' stake in the bank's risky investments?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Shareholders have more to lose, so they have more reason to restrain risk-taking.",
+          "feedback": [
+            null,
+            "More capital means more at stake.",
+            "Capital is the shareholders' stake."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 31
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Capital requirements ↑",
+            "to": "Stockholder stake (discipline) ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "controlling_di_risk",
+            "deposit_insurance_runs"
+          ]
+        },
+        {
+          "id": "controlling_di_risk_5",
+          "difficulty": 2,
+          "prompt": "How can depositors get around an insurance cap?",
+          "options": [
+            "By changing how deposits are structured and spreading them across institutions",
+            "By depositing more in one bank",
+            "They can't: caps are absolute",
+            "By converting deposits into loans"
+          ],
+          "answer": 0,
+          "explanation": "That weakens the depositor discipline the cap is meant to create.",
+          "feedback": [
+            null,
+            "That puts more above the cap.",
+            "The lecture says they can be bypassed.",
+            "Not a method."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 32
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_6",
+          "difficulty": 2,
+          "prompt": "Why does 'too big to fail' weaken depositor discipline?",
+          "options": [
+            "Depositors expect large banks to be rescued, giving them implicit coverage without a cap",
+            "Big banks pay higher deposit rates",
+            "Big banks aren't insured",
+            "Regulators examine big banks less"
+          ],
+          "answer": 0,
+          "explanation": "If depositors believe they'll be protected regardless, they don't monitor risk.",
+          "feedback": [
+            null,
+            "Not the reason.",
+            "The issue is implicit protection.",
+            "Not the reason."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 32
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_7",
+          "difficulty": 2,
+          "prompt": "Under the stricter closure rules described, when is a bank placed into receivership?",
+          "options": [
+            "Within 90 days of its capital falling below 2% of assets (book value)",
+            "When its share price falls 50%",
+            "After a year of losses",
+            "When it misses one interest payment"
+          ],
+          "answer": 0,
+          "explanation": "Five capital zones bring progressively harsher mandatory actions as capital falls.",
+          "feedback": [
+            null,
+            "Not the rule.",
+            "Not the rule.",
+            "Not the rule."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 31
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_8",
+          "difficulty": 3,
+          "prompt": "A regulator wants to reduce moral hazard without making depositors run. Which mix fits the lecture best?",
+          "options": [
+            "Risk-based premiums plus prompt corrective action, keeping insurance for small depositors",
+            "Remove all deposit insurance",
+            "Flat premiums with no examinations",
+            "Unlimited insurance for all depositors"
+          ],
+          "answer": 0,
+          "explanation": "Prices risk (stockholder discipline) and acts early (regulator discipline) while preserving run protection.",
+          "feedback": [
+            null,
+            "That brings back run risk.",
+            "That maximises moral hazard.",
+            "That removes depositor discipline entirely."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 28
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 29
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 34
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "controlling_di_risk_9",
+          "difficulty": 3,
+          "prompt": "Which factors does the lecture list as inputs to risk-based deposit insurance premiums?",
+          "options": [
+            "Categories and concentrations of assets and liabilities, other factors affecting probability of loss, and the insurer's revenue needs",
+            "Only the bank's size",
+            "Only the bank's share price",
+            "The number of branches and staff"
+          ],
+          "answer": 0,
+          "explanation": "These factors link the premium to the risk each bank imposes on the fund.",
+          "feedback": [
+            null,
+            "Size alone isn't risk.",
+            "Not listed.",
+            "Not listed."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 29
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "discount_window",
+      "name": "The discount window (lender of last resort)",
+      "week": 9,
+      "prerequisites": [],
+      "definition": "A central bank facility lending short-term against high-quality collateral at the discount rate. Primary credit for sound DIs (overnight, above the fed funds rate, any purpose); secondary credit for others at a higher rate, not to fund asset expansion.",
+      "misconceptions": [
+        "Thinking secondary credit can fund growth"
+      ],
+      "questions": [
+        {
+          "id": "discount_window_1",
+          "difficulty": 1,
+          "prompt": "What does a DI usually need to borrow from the discount window?",
+          "options": [
+            "High-quality liquid assets to pledge as collateral",
+            "A government guarantee",
+            "Approval from depositors",
+            "Nothing: it's unsecured"
+          ],
+          "answer": 0,
+          "explanation": "The rate charged is the discount rate.",
+          "feedback": [
+            null,
+            "Not needed.",
+            "Not needed.",
+            "Collateral is required."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 35
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "discount_window_2",
+          "difficulty": 1,
+          "prompt": "Who can use primary credit?",
+          "options": [
+            "Sound DIs",
+            "Only failing DIs",
+            "Non-bank companies",
+            "Foreign governments"
+          ],
+          "answer": 0,
+          "explanation": "It's very short-term (typically overnight), priced above the fed funds rate, and can be used for any purpose.",
+          "feedback": [
+            null,
+            "That's closer to secondary credit.",
+            "Not eligible.",
+            "Not eligible."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 36
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "discount_window_3",
+          "difficulty": 2,
+          "prompt": "How does secondary credit differ from primary credit?",
+          "options": [
+            "It's for DIs that don't qualify for primary credit, costs more, and can't fund an expansion of the borrower's assets",
+            "It's cheaper and has no conditions",
+            "It's only for the largest banks",
+            "It's a permanent funding source"
+          ],
+          "answer": 0,
+          "explanation": "It's temporary: a bridge back to market funding or an orderly resolution.",
+          "feedback": [
+            null,
+            "It costs more and has conditions.",
+            "Not the distinction.",
+            "It's temporary."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 37
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "discount_window_4",
+          "difficulty": 1,
+          "prompt": "A DI moves from primary to secondary discount window credit. What happens to its borrowing rate?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Secondary credit is priced above the primary credit rate.",
+          "feedback": [
+            null,
+            "Secondary is costlier.",
+            "The rates differ."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 37
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "Primary → secondary credit",
+            "to": "Borrowing rate ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "discount_window",
+            "purchased_stored_liquidity"
+          ]
+        },
+        {
+          "id": "discount_window_5",
+          "difficulty": 3,
+          "prompt": "A troubled DI wants discount window funds to grow its loan book quickly. What does the lecture suggest?",
+          "options": [
+            "It can't: secondary credit may not be used to fund an expansion of the borrower's assets",
+            "It can, at the primary credit rate",
+            "It can, with no collateral",
+            "It can, if it's too big to fail"
+          ],
+          "answer": 0,
+          "explanation": "Secondary credit should lead back to market funding or an orderly resolution.",
+          "feedback": [
+            null,
+            "A troubled DI wouldn't qualify for primary credit.",
+            "Collateral is required.",
+            "Not a rule in the lecture."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 37
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "australian_guarantees",
+      "name": "Australia's deposit and wholesale funding guarantees",
+      "week": 9,
+      "prerequisites": [],
+      "definition": "Before October 2008, Australia (with New Zealand) was one of only two OECD countries without explicit deposit insurance, relying on APRA regulation and depositor preference. In 2008 it introduced the Financial Claims Scheme (free, deposits up to A$1m, cut to A$250,000 from February 2012) and the fee-based Wholesale Funding Guarantee.",
+      "misconceptions": [
+        "Mixing up which scheme charged a fee"
+      ],
+      "questions": [
+        {
+          "id": "australian_guarantees_1",
+          "difficulty": 1,
+          "prompt": "Before October 2008, how did Australia protect depositors?",
+          "options": [
+            "Through APRA regulation and depositor preference, without explicit deposit insurance",
+            "Through the FDIC",
+            "Through an unlimited government guarantee",
+            "Through private insurers"
+          ],
+          "answer": 0,
+          "explanation": "Deposit insurance was viewed as expensive and incentive-perverting.",
+          "feedback": [
+            null,
+            "That's the US.",
+            "Not before 2008.",
+            "Not the arrangement."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 38
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "australian_guarantees_2",
+          "difficulty": 1,
+          "prompt": "What is the current cap under Australia's Financial Claims Scheme?",
+          "options": [
+            "A$250,000 (since February 2012)",
+            "A$1 million",
+            "Unlimited",
+            "A$100,000"
+          ],
+          "answer": 0,
+          "explanation": "It started at A$1 million in 2008 and was reduced in 2012.",
+          "feedback": [
+            null,
+            "That was the original cap.",
+            "There's a cap.",
+            "Not the figure."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 40
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "australian_guarantees_3",
+          "difficulty": 2,
+          "prompt": "How did the Financial Claims Scheme and the Wholesale Funding Guarantee differ?",
+          "options": [
+            "The FCS guaranteed deposits automatically at no cost; the WGS let eligible ADIs pay a risk-based fee to guarantee large deposits and wholesale funding",
+            "Both were free",
+            "Both charged the same flat fee",
+            "The FCS covered only wholesale funding"
+          ],
+          "answer": 0,
+          "explanation": "The WGS covered deposits above A$1 million and wholesale debt funding.",
+          "feedback": [
+            null,
+            "The WGS charged a fee.",
+            "The WGS fee was risk-based; the FCS was free.",
+            "That's the WGS."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 40
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "australian_guarantees_4",
+          "difficulty": 2,
+          "prompt": "Why did Australia introduce guarantees in 2008?",
+          "options": [
+            "Other countries strengthened their deposit insurance and guarantees during the GFC, so Australian banks needed similar support to stay competitive",
+            "Australian banks had failed",
+            "APRA was abolished",
+            "Depositors demanded higher interest"
+          ],
+          "answer": 0,
+          "explanation": "Without matching support, funds could flow to guaranteed banks abroad.",
+          "feedback": [
+            null,
+            "Not the reason given.",
+            "APRA continued.",
+            "Not the reason given."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 38
+            },
+            {
+              "doc": "week09_di_lecture",
+              "page": 39
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "australian_guarantees_5",
+          "difficulty": 3,
+          "prompt": "A depositor has A$400,000 in one Australian ADI that fails today. How much is guaranteed under the FCS?",
+          "options": [
+            "A$250,000",
+            "A$400,000",
+            "A$1 million",
+            "Nothing: deposits aren't insured"
+          ],
+          "answer": 0,
+          "explanation": "The cap has been A$250,000 since February 2012.",
+          "feedback": [
+            null,
+            "That's above the cap.",
+            "That was the 2008–2012 cap.",
+            "The FCS covers deposits."
+          ],
+          "sources": [
+            {
+              "doc": "week09_di_lecture",
+              "page": 40
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    }
+  ]
+}

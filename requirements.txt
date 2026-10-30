@@ -1,0 +1,11 @@
+streamlit>=1.40
+anthropic>=0.40
+pypdfium2          # renders the formula sheet and lecture slides
+psycopg[binary]    # online progress database (Supabase / Postgres)
+psycopg-pool
+# only needed for tools/build_content.py
+pypdf
+python-pptx
+python-docx
+# tests
+pytest

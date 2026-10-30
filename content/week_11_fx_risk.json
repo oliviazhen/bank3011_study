@@ -1,0 +1,871 @@
+{
+  "unit": "BANK3011",
+  "week": 11,
+  "title": "FX Risk",
+  "source": "Lecture · Foreign Exchange Risk",
+  "concepts": [
+    {
+      "id": "fx_market",
+      "name": "FX rates and transactions",
+      "week": 11,
+      "prerequisites": [],
+      "definition": "The FX market is a huge OTC market (about US$9.6 trillion a day in April 2025); about 95% of trades are interbank. Direct quotes give home currency per unit of foreign currency; indirect quotes the reverse. Spot trades settle immediately; forwards fix a rate today for future delivery.",
+      "misconceptions": [
+        "Mixing up direct and indirect quotes"
+      ],
+      "questions": [
+        {
+          "id": "fx_market_1",
+          "difficulty": 1,
+          "prompt": "What type of market is the foreign exchange market?",
+          "options": [
+            "Over-the-counter: an informal international network of participants",
+            "A single central exchange",
+            "A government auction",
+            "A retail-only market"
+          ],
+          "answer": 0,
+          "explanation": "Average daily turnover was about US$9.6 trillion in April 2025.",
+          "feedback": [
+            null,
+            "It has no central exchange.",
+            "Not an auction.",
+            "It's dominated by banks."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 3
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_market_2",
+          "difficulty": 1,
+          "prompt": "For a US investor, what is a direct quote?",
+          "options": [
+            "US dollars per unit of foreign currency, e.g. US$0.7668 per C$",
+            "Foreign currency per US dollar",
+            "The forward rate",
+            "The interest rate"
+          ],
+          "answer": 0,
+          "explanation": "Direct and indirect depend on where the quote is obtained.",
+          "feedback": [
+            null,
+            "That's an indirect quote.",
+            "Not the definition.",
+            "Not a quote."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 5
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_market_3",
+          "difficulty": 1,
+          "prompt": "What's the difference between a spot and a forward FX transaction?",
+          "options": [
+            "Spot is for immediate delivery; a forward fixes a rate today for future delivery",
+            "Spot is cheaper",
+            "Forwards trade only on exchanges",
+            "There's no difference"
+          ],
+          "answer": 0,
+          "explanation": "Forwards remove uncertainty about the future spot rate.",
+          "feedback": [
+            null,
+            "Not the distinction.",
+            "They're OTC.",
+            "They differ in timing."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 6
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_market_4",
+          "difficulty": 2,
+          "prompt": "Fancy Foods owes A$1,000,000 in 90 days. The 90-day forward rate is AUD1.48 per USD. How many USD does it pay if it hedges with the forward?",
+          "options": [
+            "US$675,675.68",
+            "US$645,161.29",
+            "US$689,655.17",
+            "US$1,480,000.00"
+          ],
+          "answer": 0,
+          "explanation": "1,000,000 ÷ 1.48 = US$675,675.68.",
+          "feedback": [
+            null,
+            "That's unhedged at a spot of 1.55.",
+            "That's unhedged at a spot of 1.45.",
+            "That multiplies instead of divides."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 6
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_market_5",
+          "difficulty": 2,
+          "prompt": "Unhedged, Fancy Foods pays US$645,161.29 if the spot rate moves to 1.55, but US$689,655.17 at 1.45. Why hedge at US$675,675.68?",
+          "options": [
+            "The forward removes the volatility of its FX liability, shifting the risk to the bank",
+            "Because it's always the cheapest outcome",
+            "Because forwards have no cost",
+            "Because unhedged positions are illegal"
+          ],
+          "answer": 0,
+          "explanation": "The hedged amount isn't the lowest, but it's certain.",
+          "feedback": [
+            null,
+            "It isn't the cheapest in every scenario.",
+            "Not the reason.",
+            "They're legal."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_market_6",
+          "difficulty": 2,
+          "prompt": "Fancy Foods owes A$1m and is unhedged. The AUD weakens (more AUD per USD). What happens to the USD it pays?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 1,
+          "explanation": "Each USD buys more AUD, so fewer USD are needed: at 1.55 it pays US$645,161 rather than US$675,676.",
+          "feedback": [
+            "A weaker AUD means fewer USD needed.",
+            null,
+            "The exchange rate sets the USD amount."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 6
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 7
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "AUD per USD ↑ (AUD weaker)",
+            "to": "USD payable ↓",
+            "steps": 1
+          },
+          "concepts": [
+            "fx_market",
+            "fx_exposure"
+          ]
+        },
+        {
+          "id": "fx_market_7",
+          "difficulty": 3,
+          "prompt": "A US importer owes C$500,000 in 60 days. The 60-day forward is C$1.25 per US$. What's the hedged USD cost?",
+          "options": [
+            "US$400,000",
+            "US$625,000",
+            "US$500,000",
+            "US$383,350"
+          ],
+          "answer": 0,
+          "explanation": "500,000 ÷ 1.25 = US$400,000.",
+          "feedback": [
+            null,
+            "That multiplies.",
+            "That ignores the rate.",
+            "That uses a different rate."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 6
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 7
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "fx_exposure",
+      "name": "FX risk exposure and DEAR",
+      "week": 11,
+      "prerequisites": [],
+      "definition": "Sources: foreign currency assets and liabilities, and FX trading. Net exposure_i = (FX assets − FX liabilities) + (FX bought − FX sold). Potential loss = net exposure in $ × FX volatility; DEAR = $ value of position × 1.65σ (95th percentile).",
+      "misconceptions": [
+        "Forgetting the off-balance-sheet bought/sold term"
+      ],
+      "questions": [
+        {
+          "id": "fx_exposure_1",
+          "difficulty": 1,
+          "prompt": "In this formula, what does (FX bought − FX sold) capture?",
+          "options": [
+            "The bank's net position in FX trading, e.g. forward purchases and sales",
+            "Its foreign loans",
+            "Its foreign deposits",
+            "Its capital"
+          ],
+          "answer": 0,
+          "explanation": "Net exposure combines the balance sheet and trading positions.",
+          "feedback": [
+            null,
+            "That's FX assets.",
+            "That's FX liabilities.",
+            "Not in the formula."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 9
+            }
+          ],
+          "type": "equation",
+          "subtype": "variables",
+          "equation": "\\text{Net exposure}_i = (\\text{FX assets}_i - \\text{FX liabilities}_i) + (\\text{FX bought}_i - \\text{FX sold}_i)",
+          "changes": 1
+        },
+        {
+          "id": "fx_exposure_2",
+          "difficulty": 1,
+          "prompt": "Where does substantial FX risk arise for a bank?",
+          "options": [
+            "From open (unhedged) positions",
+            "Only from domestic loans",
+            "From holding cash in its home currency",
+            "From fully hedged positions"
+          ],
+          "answer": 0,
+          "explanation": "Matched or hedged positions don't change value with the exchange rate.",
+          "feedback": [
+            null,
+            "Not FX exposure.",
+            "Not FX exposure.",
+            "Hedged positions limit risk."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 8
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_exposure_3",
+          "difficulty": 1,
+          "prompt": "A bank's net exposure in euros stays the same but euro volatility doubles. What happens to its potential FX loss?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Potential loss = net exposure × volatility.",
+          "feedback": [
+            null,
+            "Higher volatility means bigger potential moves.",
+            "Volatility is in the formula."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 10
+            }
+          ],
+          "type": "relationship",
+          "subtype": "directional",
+          "relationship": {
+            "from": "FX volatility ↑",
+            "to": "Potential loss ↑",
+            "steps": 1
+          },
+          "concepts": [
+            "fx_exposure",
+            "fx_market"
+          ]
+        },
+        {
+          "id": "fx_exposure_4",
+          "difficulty": 2,
+          "prompt": "A bank has €120m of assets, €80m of liabilities, has bought €30m forward and sold €50m forward. What is its net euro exposure?",
+          "options": [
+            "€20m long",
+            "€40m long",
+            "€20m short",
+            "€60m long"
+          ],
+          "answer": 0,
+          "explanation": "(120 − 80) + (30 − 50) = 40 − 20 = €20m.",
+          "feedback": [
+            null,
+            "That ignores the forwards.",
+            "The result is positive (long).",
+            "That adds sold instead of subtracting."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_exposure_5",
+          "difficulty": 2,
+          "prompt": "An FI has a €2.0m long position, the rate is $1.25/€ and the daily σ is 50bp. What's the DEAR at the 95th percentile?",
+          "options": [
+            "$20,625",
+            "$12,500",
+            "$25,000",
+            "$16,500"
+          ],
+          "answer": 0,
+          "explanation": "Value = $2.5m; volatility = 1.65 × 0.005 = 0.00825; DEAR = $20,625.",
+          "feedback": [
+            null,
+            "That forgets the 1.65.",
+            "That uses 2σ.",
+            "That uses the euro amount."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_exposure_6",
+          "difficulty": 3,
+          "prompt": "An FI is long £1m at $1.30/£ with a daily σ of 40bp. What's the DEAR at the 95th percentile?",
+          "options": [
+            "$8,580",
+            "$5,200",
+            "$6,600",
+            "$10,400"
+          ],
+          "answer": 0,
+          "explanation": "Value = $1.3m; 1.65 × 0.004 = 0.0066; DEAR = $8,580.",
+          "feedback": [
+            null,
+            "That leaves out 1.65.",
+            "That uses the pound amount.",
+            "That uses 2σ."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 11
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_exposure_7",
+          "difficulty": 3,
+          "prompt": "Why might a financial holding company have lower net FX exposure than a stand-alone bank?",
+          "options": [
+            "It can diversify across business units such as banking, insurance and funds management",
+            "It isn't allowed foreign assets",
+            "It has no liabilities",
+            "It only trades spot"
+          ],
+          "answer": 0,
+          "explanation": "Exposures in different units can offset.",
+          "feedback": [
+            null,
+            "Not the reason.",
+            "Not the reason.",
+            "Not the reason."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 9
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "fx_hedging",
+      "name": "Foreign assets and liabilities, and hedging",
+      "week": 11,
+      "prerequisites": [],
+      "definition": "Raising and investing funds across currencies can raise returns or lower funding costs (e.g. a carry trade), but FX moves outside the FI's control can wipe out spreads. Hedges can be on-balance-sheet (matching foreign assets and liabilities) or off-balance-sheet (forwards and other derivatives).",
+      "misconceptions": [
+        "Thinking a carry trade is risk-free"
+      ],
+      "questions": [
+        {
+          "id": "fx_hedging_1",
+          "difficulty": 1,
+          "prompt": "What is a carry trade?",
+          "options": [
+            "Borrowing in a low-rate currency (e.g. yen at 1%) and investing in higher-yielding assets elsewhere (e.g. USD at 3%)",
+            "Holding cash in the home currency",
+            "Buying a forward contract",
+            "Matching asset and liability currencies"
+          ],
+          "answer": 0,
+          "explanation": "It profits from the rate spread as long as exchange rates don't move against it.",
+          "feedback": [
+            null,
+            "Not a carry trade.",
+            "That's a hedge.",
+            "That's an on-balance-sheet hedge."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 12
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_hedging_2",
+          "difficulty": 1,
+          "prompt": "Which is an off-balance-sheet hedge?",
+          "options": [
+            "Selling the expected proceeds of a pound loan forward",
+            "Funding a pound loan with pound deposits",
+            "Holding more cash",
+            "Raising more equity"
+          ],
+          "answer": 0,
+          "explanation": "Forward contracts lock in the future exchange rate.",
+          "feedback": [
+            null,
+            "That's on-balance-sheet.",
+            "Not a hedge.",
+            "Not a hedge."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 14
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_hedging_3",
+          "difficulty": 2,
+          "prompt": "A US bank makes a pound loan funded by US dollar deposits. Why is it exposed even if the loan is repaid in full?",
+          "options": [
+            "If the pound falls against the dollar, the repayments are worth fewer dollars, squeezing or reversing the spread",
+            "It isn't exposed",
+            "Because US deposits pay in pounds",
+            "Because the loan has no interest"
+          ],
+          "answer": 0,
+          "explanation": "FX changes are outside the FI's control.",
+          "feedback": [
+            null,
+            "It has an FX mismatch.",
+            "Not the case.",
+            "Not the case."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 12
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 13
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "fx_hedging_4",
+          "difficulty": 2,
+          "prompt": "A bank borrows yen at 1% and invests in US dollar assets at 3%. The yen then strengthens sharply against the dollar. What happens?",
+          "options": [
+            "Repaying the yen loan costs more dollars, which can wipe out the 2% spread",
+            "Profit rises",
+            "Nothing: the spread is locked in",
+            "The bank gains on the yen loan"
+          ],
+          "answer": 0,
+          "explanation": "Yen ↑ → yen debt worth more in USD → the carry-trade spread shrinks or turns into a loss.",
+          "feedback": [
+            null,
+            "A stronger funding currency hurts.",
+            "Unhedged spreads aren't locked in.",
+            "The yen debt grows in USD terms."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 12
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 13
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Funding currency strengthens",
+            "to": "Carry trade loss",
+            "steps": 2
+          },
+          "concepts": [
+            "fx_hedging",
+            "fx_exposure"
+          ]
+        },
+        {
+          "id": "fx_hedging_5",
+          "difficulty": 3,
+          "prompt": "A bank expects £10m in loan repayments in a year and wants certainty without changing its balance sheet. What should it do?",
+          "options": [
+            "Sell £10m one year forward",
+            "Buy £10m forward",
+            "Borrow more in dollars",
+            "Do nothing"
+          ],
+          "answer": 0,
+          "explanation": "Selling the proceeds forward fixes the dollar value of the future pounds.",
+          "feedback": [
+            null,
+            "That doubles the exposure.",
+            "Doesn't hedge the pounds.",
+            "Leaves it exposed."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 14
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 15
+            }
+          ],
+          "type": "mcq"
+        }
+      ]
+    },
+    {
+      "id": "ppp_irp",
+      "name": "Purchasing power parity and interest rate parity",
+      "week": 11,
+      "prerequisites": [],
+      "definition": "Nominal rate = real rate + inflation, so with equal real rates, interest differentials reflect inflation differentials. PPP: i_domestic − i_foreign = ΔS/S, so higher-inflation currencies depreciate (a long-run theory). Covered IRP: no arbitrage means the interest differential equals the forward–spot spread.",
+      "misconceptions": [
+        "Applying PPP to short-run moves"
+      ],
+      "questions": [
+        {
+          "id": "ppp_irp_1",
+          "difficulty": 1,
+          "prompt": "Australian inflation rises while US inflation is unchanged. Under PPP, what happens to the AUD per USD exchange rate?",
+          "options": [
+            "Increases",
+            "Decreases",
+            "No change"
+          ],
+          "answer": 0,
+          "explanation": "Higher domestic inflation → the AUD loses purchasing power → more AUD per USD (the AUD depreciates).",
+          "feedback": [
+            null,
+            "Higher inflation weakens the currency.",
+            "PPP links inflation and exchange rates."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 17
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 19
+            }
+          ],
+          "type": "equation",
+          "subtype": "proportionality",
+          "equation": "i_{\\text{Domestic}} - i_{\\text{Foreign}} = \\frac{\\Delta S_{\\text{Domestic/Foreign}}}{S_{\\text{Domestic/Foreign}}}",
+          "changes": 1
+        },
+        {
+          "id": "ppp_irp_2",
+          "difficulty": 1,
+          "prompt": "Under what timeframe does PPP generally hold?",
+          "options": [
+            "The long run: it can take several years",
+            "Within a day",
+            "Only at year end",
+            "Never"
+          ],
+          "answer": 0,
+          "explanation": "It's based on the law of one price.",
+          "feedback": [
+            null,
+            "Too short.",
+            "Not a rule.",
+            "It's a long-run tendency."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_3",
+          "difficulty": 1,
+          "prompt": "What's the law of one price?",
+          "options": [
+            "In efficient markets, identical goods should have the same price in different countries",
+            "All currencies have the same value",
+            "Interest rates are equal everywhere",
+            "Prices never change"
+          ],
+          "answer": 0,
+          "explanation": "PPP builds on it.",
+          "feedback": [
+            null,
+            "Not the law.",
+            "Not the law.",
+            "Not the law."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 20
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_4",
+          "difficulty": 2,
+          "prompt": "If real interest rates are equal across countries, what explains differences in nominal interest rates?",
+          "options": [
+            "Differences in expected inflation",
+            "Differences in population",
+            "Differences in exchange rate regimes",
+            "Nothing"
+          ],
+          "answer": 0,
+          "explanation": "R = r + i, so R_US − R_EU = i_US − i_EU.",
+          "feedback": [
+            null,
+            "Not in the model.",
+            "Not in the model.",
+            "Inflation differences."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 17
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 18
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_5",
+          "difficulty": 2,
+          "prompt": "Australian inflation is 5% and US inflation 2%. Under PPP, the AUD/USD rate is 1.50 AUD per USD. What's the expected rate after a year?",
+          "options": [
+            "About 1.545 AUD per USD (AUD depreciates 3%)",
+            "About 1.455 AUD per USD",
+            "1.50 AUD per USD",
+            "About 1.575 AUD per USD"
+          ],
+          "answer": 0,
+          "explanation": "ΔS/S = 5% − 2% = 3%; 1.50 × 1.03 = 1.545.",
+          "feedback": [
+            null,
+            "That's an appreciation.",
+            "Inflation differences move the rate.",
+            "That uses 5% alone."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 17
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 19
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_6",
+          "difficulty": 2,
+          "prompt": "What does covered interest rate parity say?",
+          "options": [
+            "With no arbitrage, the interest rate differential equals the percentage spread between forward and spot exchange rates",
+            "Spot rates equal forward rates",
+            "Interest rates are equal across countries",
+            "Inflation rates are equal"
+          ],
+          "answer": 0,
+          "explanation": "Otherwise investors could lock in riskless profits by borrowing in one currency and lending in another.",
+          "feedback": [
+            null,
+            "Not if rates differ.",
+            "Not required.",
+            "That's not IRP."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 21
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_7",
+          "difficulty": 3,
+          "prompt": "UK interest rates are 2 percentage points above US rates. Under covered interest rate parity, how should the pound's forward rate compare with its spot rate (in $ per £)?",
+          "options": [
+            "The pound trades at a forward discount of about 2%",
+            "The pound trades at a forward premium of about 2%",
+            "Forward equals spot",
+            "The forward is 2% above spot because UK rates are higher"
+          ],
+          "answer": 0,
+          "explanation": "The interest differential equals the forward–spot spread; the higher-rate currency is worth less forward, removing the arbitrage.",
+          "feedback": [
+            null,
+            "That would allow riskless arbitrage.",
+            "Only if rates were equal.",
+            "Higher rates mean a forward discount."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 21
+            }
+          ],
+          "type": "mcq"
+        },
+        {
+          "id": "ppp_irp_8",
+          "difficulty": 3,
+          "prompt": "S and F are in $ per £. US rates are 4%, UK rates 6%, and the spot rate is $1.25/£. What forward rate rules out arbitrage?",
+          "options": [
+            "About $1.2264/£",
+            "About $1.2736/£",
+            "$1.25/£",
+            "About $1.3000/£"
+          ],
+          "answer": 0,
+          "explanation": "F = S × (1 + r_US) ÷ (1 + r_UK) = 1.25 × 1.04 ÷ 1.06 ≈ 1.2264. The higher-rate currency trades at a forward discount.",
+          "feedback": [
+            null,
+            "That inverts the interest ratio.",
+            "Only if rates were equal.",
+            "Not the result."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 21
+            }
+          ],
+          "type": "equation",
+          "subtype": "rearrange",
+          "equation": "1 + r_{US} = \\frac{1}{S_t}\\times(1 + r_{UK})\\times F_t",
+          "changes": 1
+        },
+        {
+          "id": "ppp_irp_9",
+          "difficulty": 3,
+          "prompt": "Under PPP, Australian inflation rises above US inflation, and real rates are equal. Trace the effects.",
+          "options": [
+            "Australian nominal rates rise relative to US rates, and over time the AUD depreciates against the USD",
+            "The AUD appreciates immediately",
+            "Nominal rates fall in Australia",
+            "Nothing changes"
+          ],
+          "answer": 0,
+          "explanation": "Inflation ↑ → nominal rate ↑ (Fisher) → purchasing power ↓ → AUD depreciates (in the long run).",
+          "feedback": [
+            null,
+            "Higher inflation weakens it.",
+            "They rise.",
+            "PPP predicts an adjustment."
+          ],
+          "sources": [
+            {
+              "doc": "week11_lecture",
+              "page": 17
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 18
+            },
+            {
+              "doc": "week11_lecture",
+              "page": 19
+            }
+          ],
+          "type": "relationship",
+          "subtype": "causal",
+          "relationship": {
+            "from": "Australian inflation ↑",
+            "to": "Nominal rates ↑, AUD ↓",
+            "steps": 3
+          },
+          "concepts": [
+            "ppp_irp",
+            "fx_market"
+          ]
+        }
+      ]
+    }
+  ]
+}
